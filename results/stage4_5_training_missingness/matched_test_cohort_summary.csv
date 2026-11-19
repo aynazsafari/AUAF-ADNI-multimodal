@@ -1,0 +1,22 @@
+task,comparison,matched_test_RID_n,reduced_set_eligible_test_n,same_test_participants_for_pair,note
+diagnosis_multiclass,S0_verified_asof vs S0_verified_asof,740,740,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+diagnosis_multiclass,S0_verified_asof vs S1_minus_CDR,740,740,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+diagnosis_multiclass,S0_verified_asof vs S2_minus_FAQ,739,739,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+diagnosis_multiclass,S0_verified_asof vs S3_minus_CDR_FAQ,739,739,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+diagnosis_multiclass,S0_verified_asof vs S4_minus_MMSE_MOCA,740,740,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+diagnosis_multiclass,S0_verified_asof vs S5_strict_CDR_FAQ_MMSE_MOCA,737,737,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+diagnosis_multiclass,S0_verified_asof vs S6_demographic_biomarker_only,620,620,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+diagnosis_binary,S0_verified_asof vs S0_verified_asof,740,740,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+diagnosis_binary,S0_verified_asof vs S1_minus_CDR,740,740,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+diagnosis_binary,S0_verified_asof vs S2_minus_FAQ,740,740,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+diagnosis_binary,S0_verified_asof vs S3_minus_CDR_FAQ,740,740,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+diagnosis_binary,S0_verified_asof vs S4_minus_MMSE_MOCA,740,740,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+diagnosis_binary,S0_verified_asof vs S5_strict_CDR_FAQ_MMSE_MOCA,739,739,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+diagnosis_binary,S0_verified_asof vs S6_demographic_biomarker_only,606,606,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+mci_conversion,S0_verified_asof vs S0_verified_asof,183,183,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+mci_conversion,S0_verified_asof vs S1_minus_CDR,183,183,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+mci_conversion,S0_verified_asof vs S2_minus_FAQ,183,183,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+mci_conversion,S0_verified_asof vs S3_minus_CDR_FAQ,183,183,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+mci_conversion,S0_verified_asof vs S4_minus_MMSE_MOCA,183,183,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+mci_conversion,S0_verified_asof vs S5_strict_CDR_FAQ_MMSE_MOCA,183,183,True,Pairwise matched test population; do not compare against unmatched S0 metrics.
+mci_conversion,S0_verified_asof vs S6_demographic_biomarker_only,118,118,True,Pairwise matched test population; do not compare against unmatched S0 metrics.

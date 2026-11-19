@@ -1,0 +1,71 @@
+{
+  "stage": "4.7",
+  "status": "EXECUTED_WITH_STATISTICAL_VALIDATION_AND_CIRCULARITY_SENSITIVITY",
+  "strict_circularity_removed_features": [
+    "CDMEMORY",
+    "CDRSB",
+    "CLOCKCON",
+    "CLOCKHAN",
+    "CLOCKNO",
+    "FAQBEVG",
+    "FAQEVENT",
+    "FAQFINAN",
+    "FAQFORM",
+    "FAQGAME",
+    "FAQMEAL",
+    "FAQREM",
+    "FAQSHOP",
+    "FAQTOTAL",
+    "FAQTRAVL",
+    "FAQTV",
+    "FFLUENCY",
+    "MMSEASON",
+    "MOCA",
+    "TRAILS"
+  ],
+  "best_tree_baselines_selected_on_validation": {
+    "diagnosis_multiclass": "XGBoost",
+    "diagnosis_binary": "CatBoost",
+    "mci_conversion": "CatBoost"
+  },
+  "neural_sensitivity_jobs": 15,
+  "tree_sensitivity_jobs": 15,
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "tasks": [
+    "diagnosis_multiclass",
+    "diagnosis_binary",
+    "mci_conversion"
+  ],
+  "training_config": {
+    "max_epochs": 20,
+    "patience": 6,
+    "batch_size": 64,
+    "learning_rate": 0.0008,
+    "weight_decay": 0.0001,
+    "scheduler_patience": 3,
+    "scheduler_factor": 0.5,
+    "min_delta": 1e-05,
+    "gradient_clip_norm": 5.0,
+    "num_workers": 0,
+    "num_threads": 2,
+    "device": null
+  },
+  "model_selection": "Validation macro-F1; test not used for selection",
+  "tree_selection": "highest mean validation macro-F1 across the three Stage 4.5 tree baselines; same original Stage 4.5 hyperparameters frozen for reduced-feature retraining",
+  "reduced_preprocessing": "train-only imputation/scaling; refit after raw proximal-feature removal",
+  "calibration": "reduced model temperature fitted on reduced validation predictions only; standard model temperature fitted on original validation predictions only",
+  "paired_comparison": "same held-out participants common to standard and reduced; participant stratified bootstrap; five seeds averaged, not independent folds",
+  "severity_strata": "CDRSB and FAQTOTAL thresholds are medians calculated on training participants only",
+  "limitations": [
+    "No external validation cohort.",
+    "Strict feature removal addresses named CDR, FAQ, MMSE and MoCA instrument blocks only; it does not prove absence of every possible information leak.",
+    "Feature-specific visit/source-row identifiers are not available; source table and instrument mapping come from Stage 4.4 feature reconciliation.",
+    "Small matched-complete-case test cohorts, especially conversion, make subgroup estimates imprecise."
+  ]
+}

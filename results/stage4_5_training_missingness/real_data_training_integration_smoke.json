@@ -1,0 +1,35 @@
+{
+  "checkpoints_and_predictions_retained": false,
+  "feature_set": "S0_verified_asof",
+  "models": [
+    {
+      "best_epoch": 1,
+      "model": "EarlyFusion",
+      "status": "COMPLETED"
+    },
+    {
+      "best_epoch": 1,
+      "model": "LateFusion",
+      "status": "COMPLETED"
+    },
+    {
+      "best_epoch": 1,
+      "model": "AttentionFusion",
+      "status": "COMPLETED"
+    },
+    {
+      "best_epoch": 1,
+      "model": "AUAF",
+      "status": "COMPLETED"
+    }
+  ],
+  "performance_metrics_retained": false,
+  "purpose": "software integration only; not a research benchmark",
+  "sample_counts": {
+    "test": 15,
+    "train": 30,
+    "validation": 15
+  },
+  "status": "PASS",
+  "task": "diagnosis_multiclass"
+}

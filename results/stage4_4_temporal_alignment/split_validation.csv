@@ -1,0 +1,4 @@
+task,n_split,n_frozen,rid_exact_match,labels_exact_match,split_sets_disjoint,all_rows_assigned
+cn_mci_ad,3700,3700,True,True,True,True
+ad_vs_nonad,3700,3700,True,True,True,True
+early_decline,911,911,True,True,True,True

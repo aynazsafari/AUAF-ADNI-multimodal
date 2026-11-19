@@ -1,0 +1,151 @@
+{
+  "bootstrap_replicates": 500,
+  "bootstrap_replicates_by_analysis": {
+    "descriptive_model_metric_cis": 200,
+    "modality_occlusion_cis_and_paired_effects": 10000,
+    "paired_model_comparisons": 500,
+    "raps_per_seed_and_pooled_cis": 500
+  },
+  "bootstrap_unit": "participant, class-stratified; same indices paired across models and all seeds",
+  "checkpoint_hash_audit_rows": 105,
+  "checkpoint_hash_audit_status": "PASS",
+  "checkpoint_source": "final Stage 4.5 S0 best checkpoints; inference only",
+  "code_sha256": {
+    "AUAF_Stage4_8_StatisticalInference_FINAL.ipynb": "eed2f8a9153f8258b830f89fa975678fdc1f76f83f767a1f7f6d5dbc9369b89b",
+    "paired_inference.py": "3b75733eb27acbe7129700fee13dc0c69315595255a7eacf26f3223cfaa21c22",
+    "stage48_reliability.py": "f9233836e001ab5cf8ed65e277f8e2e4a5fcd4b6289ac21caa0e477d2c0a7876",
+    "stage4_6_missingness_benchmark.py": "24a45e5849cadfba7cb9e34a51b3b3ee74b10ebe5ea4ed8a273adaf51f483170"
+  },
+  "cohorts": {
+    "diagnosis_binary": 3700,
+    "diagnosis_multiclass": 3700,
+    "mci_conversion": 911
+  },
+  "data_source": "Stage 4.7 packaged stage4_data derived from the Stage 4.4 temporal-clean cohort; deterministic predictions reconciled to Stage 4.5 archive",
+  "explainability": {
+    "AUAF": "30-pass MC uncertainty, gate weights and matched modality occlusion",
+    "CatBoost": "TreeSHAP feature attribution only",
+    "causal_importance_claimed": false
+  },
+  "fdr": "Benjamini-Hochberg across the complete paired test family",
+  "followup_selection_audit_status": "NOT_RUN_INPUT_MISSING",
+  "input_sha256": {
+    "diagnosis_binary_3700_asof.csv": "0d267c6510f78a42207df7242f6027a413da220c05c43d8268c9f17a24d3810a",
+    "diagnosis_multiclass_3700_asof.csv": "aa17acdc7048d5a83d5e38b93beeea65cbe5a26560df0d8258c409f0f030f4a1",
+    "feature_manifest_34_predictors.csv": "feb1cb2d61606544045339f2a34bc32a9f8cc786dc1aaf2a3893539e011e5184",
+    "mci_conversion_911_asof.csv": "d95430f010c8e5a5d40d3e5a69038cfa6c7fbab736a26dd4cc78ced00648f9ad"
+  },
+  "mc_dropout_passes": 30,
+  "mc_test_cache": {
+    "path": "/mnt/data/AUAF_Stage4_8_Working/predictions/stage48_AUAF_MC_dropout_patient_level.csv.gz",
+    "sha256": "0f3a717340a0118285080f858dceb19b1b5a28f77a0361015e66eb4c77105b54",
+    "source": "previous executed Stage 4.8 30-pass AUAF test inference; row roster/labels revalidated in this run"
+  },
+  "mc_validation_cache": {
+    "path": "/mnt/data/AUAF_Stage4_8_AUTHORIZED_RUN/outputs/validation_mc_all.csv.gz",
+    "sha256": "0582c22e119b83f47da202a47a6a0fbb19b1130ef4f2826ec086e812e40992e5",
+    "source": "fresh 30-pass MC dropout from frozen Stage 4.5 AUAF checkpoints; batched at 128; row roster/labels revalidated"
+  },
+  "metric_ci_bootstrap_replicates": 200,
+  "models": [
+    "AUAF",
+    "AttentionFusion",
+    "CatBoost",
+    "EarlyFusion",
+    "ExtraTrees",
+    "LateFusion",
+    "XGBoost"
+  ],
+  "neural_models": [
+    "EarlyFusion",
+    "LateFusion",
+    "AttentionFusion",
+    "AUAF"
+  ],
+  "no_model_training": true,
+  "no_resplitting": true,
+  "paired_comparators": [
+    "EarlyFusion",
+    "LateFusion",
+    "AttentionFusion",
+    "XGBoost",
+    "CatBoost",
+    "ExtraTrees"
+  ],
+  "paired_metrics": [
+    "accuracy",
+    "balanced_accuracy",
+    "f1_macro",
+    "roc_auc",
+    "brier",
+    "log_loss",
+    "ece"
+  ],
+  "paired_test_bootstrap_replicates": 500,
+  "paired_test_count": 126,
+  "participant_level_outputs": "retained only in the authorized analysis workspace; excluded from aggregate release",
+  "raps_compatibility": {
+    "argmax_fallback": true,
+    "probabilities": "raw 30-pass AUAF MC mean",
+    "purpose": "historical Table 6 reconciliation only",
+    "quantile": "original notebook interpolated np.quantile convention"
+  },
+  "raps_primary": {
+    "abstention_definition": "prediction-set size != 1; multi-label and empty sets separately reported",
+    "alpha": 0.1,
+    "argmax_fallback": false,
+    "formal_distribution_free_guarantee_claimed": false,
+    "k_reg": 1,
+    "lambda": 0.01,
+    "probabilities": "temperature-scaled validation/test probabilities; AUAF uses 30-pass MC mean",
+    "quantile": "finite-sample order statistic",
+    "reason": "validation was also used for early stopping/model selection and temperature fitting"
+  },
+  "run_id": "stage4_8_authorized_reliability_v2",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "seeds_are_outer_folds": false,
+  "source_reconciliation": {
+    "compatibility_gate": "all 105 deterministic test prediction files compared with Stage 4.5 miss000 archive; must pass at max_abs <= 1e-6",
+    "current_data_package": "Stage 4.7 packaged stage4_data; cohort/split/target manifests checked in this run",
+    "max_abs_probability_difference": 9.356076802191637e-08,
+    "reproduction_audit_rows": 105,
+    "stage45_original_input_hashes_differ": true
+  },
+  "stage": "4.8_core_analyses_executed_selection_bias_audit_pending",
+  "tree_models": [
+    "XGBoost",
+    "CatBoost",
+    "ExtraTrees"
+  ],
+  "paired_test_significant_after_global_BH": 23,
+  "paired_test_significant_by_task": {
+    "diagnosis_binary": 7,
+    "diagnosis_multiclass": 11,
+    "mci_conversion": 5
+  },
+  "shap_transformed_feature_count_per_task": 64,
+  "shap_base_predictor_count": 32,
+  "shap_includes_missingness_indicators": true,
+  "modality_occlusion_complete_case_n": {
+    "diagnosis_multiclass": 81,
+    "diagnosis_binary": 67,
+    "mci_conversion": 29
+  },
+  "conversion_raps_full_set_rate_all_models": 1.0,
+  "diagnostic_missing_index_date_records_retained": 15,
+  "selection_bias_audit_required_input": "mci_first_index_all_1753.csv",
+  "execution_script_sha256": {
+    "stage48_prepare_data.py": "a93301772aac31f697a8456baddf83e04b10b1a0f98c55bf9bb197c666bb3f5f",
+    "compute_validation_mc.py": "89155baec3ee058fa3b1c172efdbbc23c86525894dfbdc0b4e6de4b157ee590f",
+    "compute_paired_tests_pair.py": "177af3aa0213afdc9f3743f956766e207a0414c2df7b8a990ff2f6c78505fadf",
+    "compute_metric_ci_task_model.py": "98bce7243496e571617805af4f3b4e926379d905ff176f8b18a8bb1590b07575",
+    "compute_conformal.py": "efd2524a910602786a011fa38a52b96fca7b07b0657e40addc651f0d7df2b515",
+    "compute_shap_task_seed.py": "13474ac6479bffef4322d43064397ca98ca3572a93543257b45aed8106c18c31"
+  }
+}

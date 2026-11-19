@@ -1,0 +1,8 @@
+variant_key,primary_label,definition
+AUAF,Full AUAF,"Original architecture: learned mask tokens, content gate, structural gate, Transformer blocks, and structured modality dropout."
+AUAF_NoMaskTokens,No Mask Tokens,Replace missing-modality mask-token vectors with zero vectors; all other components retained.
+AUAF_NoContentGate,No Content Gate,Remove the content-derived gate branch; retain the availability/structural gate branch.
+AUAF_NoStructuralGate,No Structural Gate,Remove the availability/structural gate branch; retain the content-derived gate branch.
+AUAF_UniformGate,No Both Gates / Uniform Gate,Remove both learned gate branches and assign equal weights across modalities available for each participant. This is the operational No-Both-Gates condition; it is not a separate eighth model.
+AUAF_NoTransformer,No Transformer Blocks,Bypass the cross-modal Transformer blocks and CLS aggregation; classify the availability-weighted modality-token summary.
+AUAF_NoModalityDropout,No Modality Dropout,"Disable structured modality dropout during training; retain inference-time availability masks, Transformer, and both learned gate branches."

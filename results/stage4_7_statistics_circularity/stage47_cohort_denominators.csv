@@ -1,0 +1,7 @@
+cohort,task,n_test,class_counts_json,n_unique_RID
+full_test,diagnosis_multiclass,740,"{""0"": 319, ""1"": 310, ""2"": 111}",740
+full_test,diagnosis_binary,740,"{""0"": 629, ""1"": 111}",740
+full_test,mci_conversion,183,"{""0"": 125, ""1"": 58}",183
+matched_complete_case,diagnosis_multiclass,81,"{""0"": 14, ""1"": 50, ""2"": 17}",81
+matched_complete_case,diagnosis_binary,67,"{""0"": 50, ""1"": 17}",67
+matched_complete_case,mci_conversion,29,"{""0"": 18, ""1"": 11}",29

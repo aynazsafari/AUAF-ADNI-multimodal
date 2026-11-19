@@ -1,0 +1,21 @@
+group,feature,reason
+CDR,CDMEMORY,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing
+CDR,CDRSB,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing
+FAQ,FAQFINAN,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing
+FAQ,FAQFORM,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing
+FAQ,FAQSHOP,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing
+FAQ,FAQGAME,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing
+FAQ,FAQBEVG,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing
+FAQ,FAQMEAL,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing
+FAQ,FAQEVENT,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing
+FAQ,FAQTV,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing
+FAQ,FAQREM,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing
+FAQ,FAQTRAVL,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing
+FAQ,FAQTOTAL,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing
+MMSE,MMSEASON,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing
+MOCA,TRAILS,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing
+MOCA,CLOCKCON,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing
+MOCA,CLOCKNO,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing
+MOCA,CLOCKHAN,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing
+MOCA,FFLUENCY,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing
+MOCA,MOCA,Prespecified diagnosis-proximal cognitive/functional instrument block; removed before preprocessing

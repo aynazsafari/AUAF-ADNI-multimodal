@@ -1,0 +1,128 @@
+{
+  "bootstrap_resamples_planned": 2000,
+  "checkpoint_written": false,
+  "feature_set_names": [
+    "S0_verified_asof",
+    "S1_minus_CDR",
+    "S2_minus_FAQ",
+    "S3_minus_CDR_FAQ",
+    "S4_minus_MMSE_MOCA",
+    "S5_strict_CDR_FAQ_MMSE_MOCA",
+    "S6_demographic_biomarker_only"
+  ],
+  "input_sha256": {
+    "diagnosis_binary_3700_asof.csv": "0f9d248921561a623eb9bc32108118a0e32c8970946e89500d75739cf61e13b8",
+    "diagnosis_multiclass_3700_asof.csv": "e5b2ff31a7491383c0bdfe28376167db1e26dc95bce310359cc9ab4ebe9c5447",
+    "feature_manifest_34_predictors.csv": "489d81d536e94491db4e52fcd0f96b37b436c9f74663582e836008e9bbe34c76",
+    "mci_conversion_911_asof.csv": "369be50fd2ef6e57431de258c19dfa51fbea06f6825a6088bdc4390e4a4b361a"
+  },
+  "model_factory_sha256": "7328a8d84f847b0e0d37e73df5a5ddef3a368c1dc192cfa10ec0a2c350e158bd",
+  "model_training_performed": false,
+  "model_variants_smoke_tested": [
+    "EarlyFusion",
+    "LateFusion",
+    "AttentionFusion",
+    "AUAF"
+  ],
+  "numpy_version": "2.3.5",
+  "output_files": [
+    "feature_set_eligibility.csv",
+    "feature_set_registry.csv",
+    "matched_test_cohort_summary.csv",
+    "modality_overlap_summary.csv",
+    "model_factory_smoke_test.csv",
+    "preprocessor_fit_audit.csv",
+    "split_manifest_checks.csv"
+  ],
+  "pandas_version": "2.2.3",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "preprocessor_fit_audit_rows": 42,
+  "python_version": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "run_id": "stage4_5_part2_preprocessing_model_factory_v3",
+  "seeds_verified": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "split_manifest_checks": [
+    {
+      "RID_match_pct": 100.0,
+      "participants_checked": 3700,
+      "split_match_pct": 100.0,
+      "status": "PASS",
+      "target_match_pct": 100.0,
+      "task": "diagnosis_multiclass"
+    },
+    {
+      "RID_match_pct": 100.0,
+      "participants_checked": 3700,
+      "split_match_pct": 100.0,
+      "status": "PASS",
+      "target_match_pct": 100.0,
+      "task": "diagnosis_binary"
+    },
+    {
+      "RID_match_pct": 100.0,
+      "participants_checked": 911,
+      "split_match_pct": 100.0,
+      "status": "PASS",
+      "target_match_pct": 100.0,
+      "task": "mci_conversion"
+    }
+  ],
+  "stage": "4.5_part2_preprocessing_and_model_factory",
+  "tasks": [
+    {
+      "all_predictors_numeric": true,
+      "class_counts": {
+        "0": 1593,
+        "1": 1550,
+        "2": 557
+      },
+      "n": 3700,
+      "no_ADNI_sentinels": true,
+      "split_counts": {
+        "test": 740,
+        "train": 2368,
+        "validation": 592
+      },
+      "task": "diagnosis_multiclass",
+      "unique_RID": 3700
+    },
+    {
+      "all_predictors_numeric": true,
+      "class_counts": {
+        "0": 3143,
+        "1": 557
+      },
+      "n": 3700,
+      "no_ADNI_sentinels": true,
+      "split_counts": {
+        "test": 740,
+        "train": 2368,
+        "validation": 592
+      },
+      "task": "diagnosis_binary",
+      "unique_RID": 3700
+    },
+    {
+      "all_predictors_numeric": true,
+      "class_counts": {
+        "0": 621,
+        "1": 290
+      },
+      "n": 911,
+      "no_ADNI_sentinels": true,
+      "split_counts": {
+        "test": 183,
+        "train": 582,
+        "validation": 146
+      },
+      "task": "mci_conversion",
+      "unique_RID": 911
+    }
+  ],
+  "torch_version": "2.10.0+cpu"
+}

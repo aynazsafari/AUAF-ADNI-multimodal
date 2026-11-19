@@ -1,0 +1,4 @@
+task,train_n,validation_n,test_n,participants_total,seed_count,variant_count
+diagnosis_binary,2368,592,740,3700,5,7
+diagnosis_multiclass,2368,592,740,3700,5,7
+mci_conversion,582,146,183,911,5,7

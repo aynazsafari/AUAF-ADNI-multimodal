@@ -1,0 +1,98 @@
+{
+  "status": "COMPLETED_AND_AUDITED",
+  "stage": "4.6 — AUAF component ablation",
+  "run_id": "stage4_6_ablation_finalcohort_20261116_v1",
+  "planned_jobs": 105,
+  "unique_completed_jobs": 105,
+  "execution_result_status_counts": {
+    "COMPLETED": 97,
+    "SKIPPED_COMPLETE": 8
+  },
+  "variants": [
+    {
+      "variant_key": "AUAF",
+      "primary_label": "Full AUAF",
+      "definition": "Original architecture: learned mask tokens, content gate, structural gate, Transformer blocks, and structured modality dropout."
+    },
+    {
+      "variant_key": "AUAF_NoMaskTokens",
+      "primary_label": "No Mask Tokens",
+      "definition": "Replace missing-modality mask-token vectors with zero vectors; all other components retained."
+    },
+    {
+      "variant_key": "AUAF_NoContentGate",
+      "primary_label": "No Content Gate",
+      "definition": "Remove the content-derived gate branch; retain the availability/structural gate branch."
+    },
+    {
+      "variant_key": "AUAF_NoStructuralGate",
+      "primary_label": "No Structural Gate",
+      "definition": "Remove the availability/structural gate branch; retain the content-derived gate branch."
+    },
+    {
+      "variant_key": "AUAF_UniformGate",
+      "primary_label": "No Both Gates / Uniform Gate",
+      "definition": "Remove both learned gate branches and assign equal weights across modalities available for each participant. This is the operational No-Both-Gates condition; it is not a separate eighth model."
+    },
+    {
+      "variant_key": "AUAF_NoTransformer",
+      "primary_label": "No Transformer Blocks",
+      "definition": "Bypass the cross-modal Transformer blocks and CLS aggregation; classify the availability-weighted modality-token summary."
+    },
+    {
+      "variant_key": "AUAF_NoModalityDropout",
+      "primary_label": "No Modality Dropout",
+      "definition": "Disable structured modality dropout during training; retain inference-time availability masks, Transformer, and both learned gate branches."
+    }
+  ],
+  "tasks": [
+    {
+      "task": "diagnosis_binary",
+      "train_n": 2368,
+      "validation_n": 592,
+      "test_n": 740,
+      "participants_total": 3700,
+      "seed_count": 5,
+      "variant_count": 7
+    },
+    {
+      "task": "diagnosis_multiclass",
+      "train_n": 2368,
+      "validation_n": 592,
+      "test_n": 740,
+      "participants_total": 3700,
+      "seed_count": 5,
+      "variant_count": 7
+    },
+    {
+      "task": "mci_conversion",
+      "train_n": 582,
+      "validation_n": 146,
+      "test_n": 183,
+      "participants_total": 911,
+      "seed_count": 5,
+      "variant_count": 7
+    }
+  ],
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "split_policy": "Same frozen participant-level Stage 4.3 split for all variants; five seeds vary initialization, not the participant split.",
+  "model_selection": "Best checkpoint by validation Macro-F1; test metrics evaluated after checkpoint selection.",
+  "preprocessing": "Train-only median imputation and standardization; 29 clinical/cognitive + 3 fluid-biomarker predictors.",
+  "test_rosters_identical_across_variants": true,
+  "all_105_job_hashes_and_metrics_audited": true,
+  "integrity_checks_passed": 2937,
+  "integrity_checks_total": 2937,
+  "max_metric_roundtrip_difference": 1.4432899320127035e-15,
+  "AUAF_reproduces_stage4_5": true,
+  "max_AUAF_probability_difference_vs_stage4_5": 2.2204460492503126e-16,
+  "NoMaskTokens_exactly_matches_AUAF": true,
+  "NoMaskTokens_exact_comparisons": 15,
+  "inferential_statistics_performed": false,
+  "next_stage": "4.7 — paired statistical validation, bootstrap confidence intervals, effect sizes, multiple-testing correction, and circularity/sensitivity audit."
+}

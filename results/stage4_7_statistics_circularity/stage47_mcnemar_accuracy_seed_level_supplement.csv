@@ -1,0 +1,121 @@
+cohort,task,comparator,seed,n_test,AUAF_correct_comparator_wrong,comparator_correct_AUAF_wrong,discordant_pairs,mcnemar_method,mcnemar_p_value,p_fdr_bh,significant_after_FDR_0_05
+full_test,diagnosis_multiclass,AttentionFusion,42,740,20,10,30,chi-square continuity-corrected,0.10034824646229054,0.40139298584916216,False
+full_test,diagnosis_multiclass,AttentionFusion,123,740,14,13,27,chi-square continuity-corrected,1.0,1.0,False
+full_test,diagnosis_multiclass,AttentionFusion,456,740,15,18,33,chi-square continuity-corrected,0.7277235466695502,1.0,False
+full_test,diagnosis_multiclass,AttentionFusion,789,740,11,8,19,exact,0.6476058959960938,1.0,False
+full_test,diagnosis_multiclass,AttentionFusion,1024,740,12,22,34,chi-square continuity-corrected,0.12271259472816963,0.42857142857142855,False
+full_test,diagnosis_multiclass,XGBoost,42,740,27,18,45,chi-square continuity-corrected,0.23303798227390204,0.6572611280638961,False
+full_test,diagnosis_multiclass,XGBoost,123,740,23,15,38,chi-square continuity-corrected,0.25614496660352326,0.6572611280638961,False
+full_test,diagnosis_multiclass,XGBoost,456,740,27,22,49,chi-square continuity-corrected,0.5677091661973526,1.0,False
+full_test,diagnosis_multiclass,XGBoost,789,740,24,13,37,chi-square continuity-corrected,0.10017829422626791,0.40139298584916216,False
+full_test,diagnosis_multiclass,XGBoost,1024,740,14,17,31,chi-square continuity-corrected,0.7194375444233914,1.0,False
+full_test,diagnosis_multiclass,CatBoost,42,740,17,18,35,chi-square continuity-corrected,1.0,1.0,False
+full_test,diagnosis_multiclass,CatBoost,123,740,16,17,33,chi-square continuity-corrected,1.0,1.0,False
+full_test,diagnosis_multiclass,CatBoost,456,740,19,20,39,chi-square continuity-corrected,1.0,1.0,False
+full_test,diagnosis_multiclass,CatBoost,789,740,17,13,30,chi-square continuity-corrected,0.583882420770365,1.0,False
+full_test,diagnosis_multiclass,CatBoost,1024,740,8,21,29,chi-square continuity-corrected,0.02585758046344289,0.17238386975628595,False
+full_test,diagnosis_multiclass,ExtraTrees,42,740,56,20,76,chi-square continuity-corrected,5.950244402797194e-05,0.000892536660419579,True
+full_test,diagnosis_multiclass,ExtraTrees,123,740,56,15,71,chi-square continuity-corrected,2.0632678310526894e-06,4.1265356621053785e-05,True
+full_test,diagnosis_multiclass,ExtraTrees,456,740,55,24,79,chi-square continuity-corrected,0.0007374499096730661,0.008849398916076794,True
+full_test,diagnosis_multiclass,ExtraTrees,789,740,55,16,71,chi-square continuity-corrected,6.489785649272613e-06,0.00011125346827324479,True
+full_test,diagnosis_multiclass,ExtraTrees,1024,740,44,16,60,chi-square continuity-corrected,0.0004908786448402841,0.006545048597870455,True
+full_test,diagnosis_binary,AttentionFusion,42,740,12,12,24,exact,1.0,1.0,False
+full_test,diagnosis_binary,AttentionFusion,123,740,19,8,27,chi-square continuity-corrected,0.05429182836685469,0.29613724563738925,False
+full_test,diagnosis_binary,AttentionFusion,456,740,18,8,26,chi-square continuity-corrected,0.07755616674366539,0.3446940744162906,False
+full_test,diagnosis_binary,AttentionFusion,789,740,7,15,22,exact,0.13380050659179688,0.43394758894636826,False
+full_test,diagnosis_binary,AttentionFusion,1024,740,6,14,20,exact,0.11531829833984375,0.42857142857142855,False
+full_test,diagnosis_binary,XGBoost,42,740,16,24,40,chi-square continuity-corrected,0.2683816272927576,0.6572611280638961,False
+full_test,diagnosis_binary,XGBoost,123,740,12,17,29,chi-square continuity-corrected,0.4576140668763148,0.8857046455670609,False
+full_test,diagnosis_binary,XGBoost,456,740,22,20,42,chi-square continuity-corrected,0.8773705560641434,1.0,False
+full_test,diagnosis_binary,XGBoost,789,740,15,27,42,chi-square continuity-corrected,0.0896329942678889,0.38414140400523816,False
+full_test,diagnosis_binary,XGBoost,1024,740,18,24,42,chi-square continuity-corrected,0.4404006981390033,0.8828366535641072,False
+full_test,diagnosis_binary,CatBoost,42,740,12,32,44,chi-square continuity-corrected,0.004178557568166477,0.04178557568166477,True
+full_test,diagnosis_binary,CatBoost,123,740,13,23,36,chi-square continuity-corrected,0.13361440253771584,0.43394758894636826,False
+full_test,diagnosis_binary,CatBoost,456,740,21,26,47,chi-square continuity-corrected,0.5595836997752427,1.0,False
+full_test,diagnosis_binary,CatBoost,789,740,16,34,50,chi-square continuity-corrected,0.016209541409225422,0.12051290183850648,False
+full_test,diagnosis_binary,CatBoost,1024,740,13,33,46,chi-square continuity-corrected,0.005088185461451067,0.04361301824100915,True
+full_test,diagnosis_binary,ExtraTrees,42,740,52,4,56,chi-square continuity-corrected,3.3718385906510036e-10,2.0231031543906022e-08,True
+full_test,diagnosis_binary,ExtraTrees,123,740,54,6,60,chi-square continuity-corrected,1.2977606068416835e-09,5.191042427366734e-08,True
+full_test,diagnosis_binary,ExtraTrees,456,740,57,6,63,chi-square continuity-corrected,2.987848011318003e-10,2.0231031543906022e-08,True
+full_test,diagnosis_binary,ExtraTrees,789,740,45,5,50,chi-square continuity-corrected,3.479224859723167e-08,8.350139663335601e-07,True
+full_test,diagnosis_binary,ExtraTrees,1024,740,48,6,54,chi-square continuity-corrected,2.4135894166827614e-08,7.240768250048284e-07,True
+full_test,mci_conversion,AttentionFusion,42,183,9,9,18,exact,1.0,1.0,False
+full_test,mci_conversion,AttentionFusion,123,183,9,10,19,exact,1.0,1.0,False
+full_test,mci_conversion,AttentionFusion,456,183,4,14,18,exact,0.0308837890625,0.19505550986842105,False
+full_test,mci_conversion,AttentionFusion,789,183,7,8,15,exact,1.0,1.0,False
+full_test,mci_conversion,AttentionFusion,1024,183,16,11,27,chi-square continuity-corrected,0.4414183267820536,0.8828366535641072,False
+full_test,mci_conversion,XGBoost,42,183,18,11,29,chi-square continuity-corrected,0.2652053925915044,0.6572611280638961,False
+full_test,mci_conversion,XGBoost,123,183,16,8,24,exact,0.15158963203430176,0.4787041011609529,False
+full_test,mci_conversion,XGBoost,456,183,18,15,33,chi-square continuity-corrected,0.7277235466695502,1.0,False
+full_test,mci_conversion,XGBoost,789,183,19,8,27,chi-square continuity-corrected,0.05429182836685469,0.29613724563738925,False
+full_test,mci_conversion,XGBoost,1024,183,22,16,38,chi-square continuity-corrected,0.41730416562740436,0.8633879288842848,False
+full_test,mci_conversion,CatBoost,42,183,13,8,21,exact,0.38331031799316406,0.8162006578947368,False
+full_test,mci_conversion,CatBoost,123,183,10,11,21,exact,1.0,1.0,False
+full_test,mci_conversion,CatBoost,456,183,8,13,21,exact,0.38331031799316406,0.8162006578947368,False
+full_test,mci_conversion,CatBoost,789,183,12,10,22,exact,0.8318119049072266,1.0,False
+full_test,mci_conversion,CatBoost,1024,183,12,18,30,chi-square continuity-corrected,0.3613104285261789,0.8162006578947368,False
+full_test,mci_conversion,ExtraTrees,42,183,32,12,44,chi-square continuity-corrected,0.004178557568166477,0.04178557568166477,True
+full_test,mci_conversion,ExtraTrees,123,183,31,14,45,chi-square continuity-corrected,0.017072661093788417,0.12051290183850648,False
+full_test,mci_conversion,ExtraTrees,456,183,31,19,50,chi-square continuity-corrected,0.11979493042591895,0.42857142857142855,False
+full_test,mci_conversion,ExtraTrees,789,183,30,11,41,chi-square continuity-corrected,0.004936818556325073,0.04361301824100915,True
+full_test,mci_conversion,ExtraTrees,1024,183,35,19,54,chi-square continuity-corrected,0.041226833337163815,0.2473610000229829,False
+matched_complete_case,diagnosis_multiclass,AttentionFusion,42,81,5,3,8,exact,0.7265625,1.0,False
+matched_complete_case,diagnosis_multiclass,AttentionFusion,123,81,6,3,9,exact,0.5078125,0.9375,False
+matched_complete_case,diagnosis_multiclass,AttentionFusion,456,81,4,5,9,exact,1.0,1.0,False
+matched_complete_case,diagnosis_multiclass,AttentionFusion,789,81,2,2,4,exact,1.0,1.0,False
+matched_complete_case,diagnosis_multiclass,AttentionFusion,1024,81,6,4,10,exact,0.75390625,1.0,False
+matched_complete_case,diagnosis_multiclass,XGBoost,42,81,10,6,16,exact,0.454498291015625,0.8857046455670609,False
+matched_complete_case,diagnosis_multiclass,XGBoost,123,81,11,3,14,exact,0.057373046875,0.29933763586956524,False
+matched_complete_case,diagnosis_multiclass,XGBoost,456,81,12,6,18,exact,0.237884521484375,0.6572611280638961,False
+matched_complete_case,diagnosis_multiclass,XGBoost,789,81,13,6,19,exact,0.1670684814453125,0.5140568659855769,False
+matched_complete_case,diagnosis_multiclass,XGBoost,1024,81,7,3,10,exact,0.34375,0.8088235294117647,False
+matched_complete_case,diagnosis_multiclass,CatBoost,42,81,5,8,13,exact,0.5810546875,1.0,False
+matched_complete_case,diagnosis_multiclass,CatBoost,123,81,6,5,11,exact,1.0,1.0,False
+matched_complete_case,diagnosis_multiclass,CatBoost,456,81,8,6,14,exact,0.79052734375,1.0,False
+matched_complete_case,diagnosis_multiclass,CatBoost,789,81,8,7,15,exact,1.0,1.0,False
+matched_complete_case,diagnosis_multiclass,CatBoost,1024,81,6,9,15,exact,0.6072387695312499,1.0,False
+matched_complete_case,diagnosis_multiclass,ExtraTrees,42,81,11,7,18,exact,0.480682373046875,0.9155854724702381,False
+matched_complete_case,diagnosis_multiclass,ExtraTrees,123,81,12,2,14,exact,0.012939453125,0.103515625,False
+matched_complete_case,diagnosis_multiclass,ExtraTrees,456,81,13,7,20,exact,0.26317596435546875,0.6572611280638961,False
+matched_complete_case,diagnosis_multiclass,ExtraTrees,789,81,13,7,20,exact,0.26317596435546875,0.6572611280638961,False
+matched_complete_case,diagnosis_multiclass,ExtraTrees,1024,81,8,4,12,exact,0.3876953125,0.8162006578947368,False
+matched_complete_case,diagnosis_binary,AttentionFusion,42,67,1,7,8,exact,0.0703125,0.3245192307692308,False
+matched_complete_case,diagnosis_binary,AttentionFusion,123,67,6,1,7,exact,0.125,0.42857142857142855,False
+matched_complete_case,diagnosis_binary,AttentionFusion,456,67,4,1,5,exact,0.375,0.8162006578947368,False
+matched_complete_case,diagnosis_binary,AttentionFusion,789,67,1,1,2,exact,1.0,1.0,False
+matched_complete_case,diagnosis_binary,AttentionFusion,1024,67,0,3,3,exact,0.25,0.6572611280638961,False
+matched_complete_case,diagnosis_binary,XGBoost,42,67,5,8,13,exact,0.5810546875,1.0,False
+matched_complete_case,diagnosis_binary,XGBoost,123,67,3,3,6,exact,1.0,1.0,False
+matched_complete_case,diagnosis_binary,XGBoost,456,67,5,6,11,exact,1.0,1.0,False
+matched_complete_case,diagnosis_binary,XGBoost,789,67,5,7,12,exact,0.7744140625,1.0,False
+matched_complete_case,diagnosis_binary,XGBoost,1024,67,4,6,10,exact,0.75390625,1.0,False
+matched_complete_case,diagnosis_binary,CatBoost,42,67,2,8,10,exact,0.109375,0.42338709677419356,False
+matched_complete_case,diagnosis_binary,CatBoost,123,67,3,3,6,exact,1.0,1.0,False
+matched_complete_case,diagnosis_binary,CatBoost,456,67,4,5,9,exact,1.0,1.0,False
+matched_complete_case,diagnosis_binary,CatBoost,789,67,4,5,9,exact,1.0,1.0,False
+matched_complete_case,diagnosis_binary,CatBoost,1024,67,3,8,11,exact,0.2265625,0.6572611280638961,False
+matched_complete_case,diagnosis_binary,ExtraTrees,42,67,1,1,2,exact,1.0,1.0,False
+matched_complete_case,diagnosis_binary,ExtraTrees,123,67,5,1,6,exact,0.21875,0.65625,False
+matched_complete_case,diagnosis_binary,ExtraTrees,456,67,5,3,8,exact,0.7265625,1.0,False
+matched_complete_case,diagnosis_binary,ExtraTrees,789,67,1,0,1,exact,1.0,1.0,False
+matched_complete_case,diagnosis_binary,ExtraTrees,1024,67,2,2,4,exact,1.0,1.0,False
+matched_complete_case,mci_conversion,AttentionFusion,42,29,0,1,1,exact,1.0,1.0,False
+matched_complete_case,mci_conversion,AttentionFusion,123,29,0,1,1,exact,1.0,1.0,False
+matched_complete_case,mci_conversion,AttentionFusion,456,29,1,3,4,exact,0.625,1.0,False
+matched_complete_case,mci_conversion,AttentionFusion,789,29,0,1,1,exact,1.0,1.0,False
+matched_complete_case,mci_conversion,AttentionFusion,1024,29,2,0,2,exact,0.5,0.9375,False
+matched_complete_case,mci_conversion,XGBoost,42,29,2,4,6,exact,0.6875,1.0,False
+matched_complete_case,mci_conversion,XGBoost,123,29,1,3,4,exact,0.625,1.0,False
+matched_complete_case,mci_conversion,XGBoost,456,29,0,5,5,exact,0.0625,0.3,False
+matched_complete_case,mci_conversion,XGBoost,789,29,0,5,5,exact,0.0625,0.3,False
+matched_complete_case,mci_conversion,XGBoost,1024,29,2,2,4,exact,1.0,1.0,False
+matched_complete_case,mci_conversion,CatBoost,42,29,2,2,4,exact,1.0,1.0,False
+matched_complete_case,mci_conversion,CatBoost,123,29,1,3,4,exact,0.625,1.0,False
+matched_complete_case,mci_conversion,CatBoost,456,29,2,4,6,exact,0.6875,1.0,False
+matched_complete_case,mci_conversion,CatBoost,789,29,1,4,5,exact,0.375,0.8162006578947368,False
+matched_complete_case,mci_conversion,CatBoost,1024,29,1,2,3,exact,1.0,1.0,False
+matched_complete_case,mci_conversion,ExtraTrees,42,29,6,4,10,exact,0.75390625,1.0,False
+matched_complete_case,mci_conversion,ExtraTrees,123,29,5,5,10,exact,1.0,1.0,False
+matched_complete_case,mci_conversion,ExtraTrees,456,29,6,5,11,exact,1.0,1.0,False
+matched_complete_case,mci_conversion,ExtraTrees,789,29,5,5,10,exact,1.0,1.0,False
+matched_complete_case,mci_conversion,ExtraTrees,1024,29,6,2,8,exact,0.2890625,0.69375,False

@@ -1,0 +1,7 @@
+task,feature,manifest_nonmissing,integrated_nonmissing,compared_nonmissing,different_values,manifest_present_integrated_missing,manifest_missing_integrated_present,all_source_rows_found
+diagnosis,ABETA40,26,26,26,0,0,0,True
+diagnosis,ABETA42,524,524,524,0,0,0,True
+diagnosis,PTAU,520,520,520,0,0,0,True
+mci_to_ad,ABETA40,21,21,21,0,0,0,True
+mci_to_ad,ABETA42,272,272,272,0,0,0,True
+mci_to_ad,PTAU,272,272,272,0,0,0,True

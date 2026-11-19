@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "best_state_sha256": "9198a0b4e89d67d0c528e43b1902fdd695db39e914ba42c83c30105f2d083422",
+    "completed_job_skipped_on_repeat": true,
+    "config_mismatch_rejected": true,
+    "existing_job_overwrite_rejected": true,
+    "interrupted_after_epoch_1": true,
+    "resume_completed": true,
+    "resumed_equals_uninterrupted_best_state": true,
+    "run_manifest_mismatch_rejected": true
+  },
+  "completed_repeat_status": "SKIPPED_COMPLETE",
+  "resumed_status": "COMPLETED",
+  "status": "PASS",
+  "test_data": "synthetic only; no research participants or labels used",
+  "uninterrupted_status": "COMPLETED"
+}

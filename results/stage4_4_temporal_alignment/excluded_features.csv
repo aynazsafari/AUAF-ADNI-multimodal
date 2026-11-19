@@ -1,0 +1,7 @@
+Feature,Category,Reason
+LANGUAGE_CODE,Administrative metadata,Form-language metadata; not a participant clinical predictor. Excluded from the 31-feature clinical modality.
+TAU,Biomarker not in frozen specification,"Present in the integrated file but not part of the original three-feature biomarker manifest (ABETA40, ABETA42, PTAU). Excluded to preserve the specified model inputs."
+EXAMDATE / INDEX_DATE / EXAMDATE_BIO,Temporal metadata,Used only for index alignment and audit; never included as model predictors.
+PHASE / VISCODE / VISCODE2,Visit metadata,Used for exact visit alignment and provenance; never included as model predictors.
+DIAGNOSIS / DIAGNOSIS_CODE / DXSUM_* / TARGET_*,Label/provenance,"Outcome and diagnosis fields are metadata/targets, not input predictors."
+RID / _split,Identifier/split metadata,RID identifies participants and _split assigns train/validation/test; neither is a predictor.

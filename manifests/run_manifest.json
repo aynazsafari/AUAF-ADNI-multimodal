@@ -1,0 +1,86 @@
+{
+  "immutable_manifest": {
+    "ablation_factory_sha256": "89f7bf9c78d5542ce7991ca54bf4ea415e2c5ddeb751a1e88c23e40013f49e66",
+    "architecture_preflight": {
+      "interpretation": "In the current AUAF forward pass, absent-modality tokens are key-padded in Transformer attention and receive zero gate weight; their learned mask-token values therefore have no path to the prediction output.",
+      "mask_token_perturbation_max_logit_difference": 0.0,
+      "no_mask_tokens_shared_weight_max_logit_difference": 0.0
+    },
+    "candidate_predictors": 34,
+    "clinical_cognitive_predictors": 29,
+    "combined_model_code_sha256": "7c79c4949f435c81b0c574feea0953b4fdf71325b09d07d04e93952fa3b77510",
+    "excluded_unverified_fields": [
+      "PTENGSPKAGE",
+      "PTIMMAGE"
+    ],
+    "feature_set": "S0_verified_asof",
+    "fluid_biomarker_predictors": 3,
+    "input_sha256": {
+      "diagnosis_binary_3700_asof.csv": "0f9d248921561a623eb9bc32108118a0e32c8970946e89500d75739cf61e13b8",
+      "diagnosis_multiclass_3700_asof.csv": "e5b2ff31a7491383c0bdfe28376167db1e26dc95bce310359cc9ab4ebe9c5447",
+      "feature_manifest_34_predictors.csv": "489d81d536e94491db4e52fcd0f96b37b436c9f74663582e836008e9bbe34c76",
+      "mci_conversion_911_asof.csv": "369be50fd2ef6e57431de258c19dfa51fbea06f6825a6088bdc4390e4a4b361a",
+      "reference_splits/subject_split_manifest__ad_vs_nonad.csv": "d257e53b5f62319a5d9d8ba03a845290b5220d855379c1d5735d07823ef8a2e5",
+      "reference_splits/subject_split_manifest__cn_mci_ad.csv": "8cd3e4f78fd7f33b82542e83701f310b67662efd47850aa908f2442891224215",
+      "reference_splits/subject_split_manifest__early_decline.csv": "4a5e1d7e55c75cbfc1a5b5d678afc1c593c689236030fe1f25634cc3c23f3c04"
+    },
+    "model_factory_sha256": "7328a8d84f847b0e0d37e73df5a5ddef3a368c1dc192cfa10ec0a2c350e158bd",
+    "model_selection_metric": "validation_macro_f1",
+    "planned_jobs": 105,
+    "preprocessing_policy": "Train-only median imputation and standardization, exactly as Stage 4.5 S0.",
+    "run_id": "stage4_6_ablation_finalcohort_20261116_v1",
+    "schema_version": 1,
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      1024
+    ],
+    "split_policy": "Frozen Stage 4.3 participant-level split manifests; no re-splitting.",
+    "stage": "4.6_component_ablation_final_temporal_clean_cohort",
+    "stage4_5_final_manifest_sha256": "610403cf68a3f185b9e636d369c0e6fd6ffe0b2d21694394ceddfd662a378cd4",
+    "tasks": [
+      "diagnosis_multiclass",
+      "diagnosis_binary",
+      "mci_conversion"
+    ],
+    "test_evaluation_policy": "Best checkpoint selected by validation Macro-F1; test evaluated once after selection.",
+    "training_config": {
+      "batch_size": 64,
+      "device": null,
+      "gradient_clip_norm": 5.0,
+      "learning_rate": 0.0008,
+      "max_epochs": 20,
+      "min_delta": 1e-05,
+      "num_threads": 2,
+      "num_workers": 0,
+      "patience": 6,
+      "scheduler_factor": 0.5,
+      "scheduler_patience": 3,
+      "weight_decay": 0.0001
+    },
+    "training_engine_sha256": "97dc2525ef80130c601f75966c19edd49e48e60ea60f5b3c320f6c84b611c733",
+    "training_plan_sha256": "116d8d12706d8ec5ad0012f32e36340714ac94b80fde22bde3b466a63b549abe",
+    "variant_definitions": {
+      "AUAF": "Original AUAF implementation; both gates, mask-token inputs, Transformer blocks and structured modality dropout retained.",
+      "AUAF_NoContentGate": "Remove the content-derived gate score; retain only the structural availability-derived gate score.",
+      "AUAF_NoMaskTokens": "For unavailable modalities, replace the learned mask-token vector with zeros. The mask-token parameters remain instantiated but are disconnected to preserve matched initialization. The original key-padding mask and availability-aware gate remain unchanged.",
+      "AUAF_NoModalityDropout": "Disable structured modality dropout during training; retain the original inference-time availability mask, Transformer and both gates.",
+      "AUAF_NoStructuralGate": "Remove the structural availability-derived gate score; retain only the content-derived gate score, with unavailable modalities still masked before softmax.",
+      "AUAF_NoTransformer": "Bypass all cross-modal Transformer blocks and the CLS aggregation branch; classify the availability-weighted modality-token summary directly.",
+      "AUAF_UniformGate": "Remove both learned gate scores and assign equal weights across the modalities available for each participant."
+    },
+    "variants": [
+      "AUAF",
+      "AUAF_NoMaskTokens",
+      "AUAF_NoContentGate",
+      "AUAF_NoStructuralGate",
+      "AUAF_UniformGate",
+      "AUAF_NoTransformer",
+      "AUAF_NoModalityDropout"
+    ],
+    "verified_predictors": 32
+  },
+  "immutable_manifest_sha256": "f7a1185475c9fb954f906289a3371aa5528ffa01872d20ddf008faeddb173c51"
+}

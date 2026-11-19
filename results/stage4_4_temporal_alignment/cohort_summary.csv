@@ -1,0 +1,4 @@
+task,n,unique_RID,target_distribution,index_date_missing_n,clinical_available_n,biomarker_exact_visit_source_n,biomarker_asof_n,future_biomarker_excluded_n,biomarker_model_available_n,no_exact_visit_biomarker_source_n,n_clinical_features,n_biomarker_features,n_total_model_features
+cn_mci_ad,3700,3700,"{""0"": 1593, ""1"": 1550, ""2"": 557}",15,3700,525,316,209,316,3175,31,3,34
+ad_vs_nonad,3700,3700,"{""0"": 3143, ""1"": 557}",15,3700,525,316,209,316,3175,31,3,34
+early_decline,911,911,"{""0"": 621, ""1"": 290}",0,911,272,169,103,169,639,31,3,34

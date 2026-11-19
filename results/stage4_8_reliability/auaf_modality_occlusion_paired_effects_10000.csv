@@ -1,0 +1,25 @@
+task,contrast,metric,effect_size_metric_difference,ci_low,ci_high,bootstrap_repetitions,interpretation
+diagnosis_multiclass,both_modalities_minus_clinical_only,accuracy,-0.0246913580246913,-0.0864197611808776,0.0370370149612426,10000,Descriptive paired difference; not a causal modality effect.
+diagnosis_multiclass,both_modalities_minus_clinical_only,macro_f1,-0.0337065062942255,-0.1088241159915924,0.0379767701029777,10000,Descriptive paired difference; not a causal modality effect.
+diagnosis_multiclass,both_modalities_minus_clinical_only,brier,-0.0108178850453594,-0.0544201908568376,0.0284037239738856,10000,Descriptive paired difference; not a causal modality effect.
+diagnosis_multiclass,both_modalities_minus_clinical_only,ece,0.017086350827397,-0.048533303167202,0.0931093224962263,10000,Descriptive paired difference; not a causal modality effect.
+diagnosis_multiclass,both_modalities_minus_biomarker_only,accuracy,0.1975308641975308,0.1108024626970294,0.2839506268501282,10000,Descriptive paired difference; not a causal modality effect.
+diagnosis_multiclass,both_modalities_minus_biomarker_only,macro_f1,0.4898152243353481,0.3778207197785377,0.5995972126722335,10000,Descriptive paired difference; not a causal modality effect.
+diagnosis_multiclass,both_modalities_minus_biomarker_only,brier,-0.2508505642486796,-0.3484046125169974,-0.1490968807081606,10000,Descriptive paired difference; not a causal modality effect.
+diagnosis_multiclass,both_modalities_minus_biomarker_only,ece,0.0247290520706434,-0.0630977466229706,0.108464680770186,10000,Descriptive paired difference; not a causal modality effect.
+diagnosis_binary,both_modalities_minus_clinical_only,accuracy,0.0,0.0,0.0,10000,Descriptive paired difference; not a causal modality effect.
+diagnosis_binary,both_modalities_minus_clinical_only,macro_f1,0.0,0.0,0.0,10000,Descriptive paired difference; not a causal modality effect.
+diagnosis_binary,both_modalities_minus_clinical_only,brier,-0.0712883541153204,-0.1316341476883342,-0.0216796186790025,10000,Descriptive paired difference; not a causal modality effect.
+diagnosis_binary,both_modalities_minus_clinical_only,ece,-0.0492658411142389,-0.0974563321803803,0.0039156942496987,10000,Descriptive paired difference; not a causal modality effect.
+diagnosis_binary,both_modalities_minus_biomarker_only,accuracy,0.1194029850746268,-0.0149253606796264,0.253731369972229,10000,Descriptive paired difference; not a causal modality effect.
+diagnosis_binary,both_modalities_minus_biomarker_only,macro_f1,0.1339203118805338,-0.0079871580004692,0.2811307594180107,10000,Descriptive paired difference; not a causal modality effect.
+diagnosis_binary,both_modalities_minus_biomarker_only,brier,-0.1154738149854855,-0.2274320942322632,0.0058037859187368,10000,Descriptive paired difference; not a causal modality effect.
+diagnosis_binary,both_modalities_minus_biomarker_only,ece,0.0311548721805011,-0.0885207188903453,0.0927617249836568,10000,Descriptive paired difference; not a causal modality effect.
+mci_conversion,both_modalities_minus_clinical_only,accuracy,0.0344827586206897,-0.1034482717514038,0.1724138259887695,10000,Descriptive paired difference; not a causal modality effect.
+mci_conversion,both_modalities_minus_clinical_only,macro_f1,0.0263636363636363,-0.1320379704236984,0.1809635609388351,10000,Descriptive paired difference; not a causal modality effect.
+mci_conversion,both_modalities_minus_clinical_only,brier,-0.0333362145438157,-0.1104288749972123,0.0440517757589568,10000,Descriptive paired difference; not a causal modality effect.
+mci_conversion,both_modalities_minus_clinical_only,ece,0.0534010058114498,-0.0700291480923535,0.1166539270597895,10000,Descriptive paired difference; not a causal modality effect.
+mci_conversion,both_modalities_minus_biomarker_only,accuracy,0.1724137931034483,0.0689654946327209,0.3103448450565338,10000,Descriptive paired difference; not a causal modality effect.
+mci_conversion,both_modalities_minus_biomarker_only,macro_f1,0.1614260888454437,0.058146558701992,0.2968988724052903,10000,Descriptive paired difference; not a causal modality effect.
+mci_conversion,both_modalities_minus_biomarker_only,brier,-0.199444668266763,-0.3570680379222517,-0.0568322788452876,10000,Descriptive paired difference; not a causal modality effect.
+mci_conversion,both_modalities_minus_biomarker_only,ece,-0.0068456778345844,-0.1298938873537957,0.1208134489252131,10000,Descriptive paired difference; not a causal modality effect.

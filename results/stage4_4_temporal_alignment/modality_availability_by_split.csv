@@ -1,0 +1,10 @@
+task,split,n,clinical_available_n,clinical_unavailable_n,biomarker_available_n,biomarker_unavailable_n,biomarker_asof_source_n,future_biomarker_excluded_n
+cn_mci_ad,train,2368,2368,0,184,2184,184,136
+cn_mci_ad,validation,592,592,0,51,541,51,35
+cn_mci_ad,test,740,740,0,81,659,81,38
+ad_vs_nonad,train,2368,2368,0,199,2169,199,134
+ad_vs_nonad,validation,592,592,0,50,542,50,37
+ad_vs_nonad,test,740,740,0,67,673,67,38
+early_decline,train,582,582,0,107,475,107,64
+early_decline,validation,146,146,0,33,113,33,15
+early_decline,test,183,183,0,29,154,29,24

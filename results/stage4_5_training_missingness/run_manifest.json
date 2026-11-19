@@ -1,0 +1,112 @@
+{
+  "immutable_manifest": {
+    "feature_sets_by_task": {
+      "diagnosis_binary": [
+        "S0_verified_asof",
+        "S1_minus_CDR",
+        "S2_minus_FAQ",
+        "S3_minus_CDR_FAQ",
+        "S4_minus_MMSE_MOCA",
+        "S5_strict_CDR_FAQ_MMSE_MOCA"
+      ],
+      "diagnosis_multiclass": [
+        "S0_verified_asof",
+        "S1_minus_CDR",
+        "S2_minus_FAQ",
+        "S3_minus_CDR_FAQ",
+        "S4_minus_MMSE_MOCA",
+        "S5_strict_CDR_FAQ_MMSE_MOCA"
+      ],
+      "mci_conversion": [
+        "S0_verified_asof",
+        "S1_minus_CDR",
+        "S2_minus_FAQ",
+        "S3_minus_CDR_FAQ",
+        "S4_minus_MMSE_MOCA",
+        "S5_strict_CDR_FAQ_MMSE_MOCA",
+        "S6_demographic_biomarker_only"
+      ]
+    },
+    "input_sha256": {
+      "diagnosis_binary_3700_asof.csv": "0f9d248921561a623eb9bc32108118a0e32c8970946e89500d75739cf61e13b8",
+      "diagnosis_multiclass_3700_asof.csv": "e5b2ff31a7491383c0bdfe28376167db1e26dc95bce310359cc9ab4ebe9c5447",
+      "feature_manifest_34_predictors.csv": "489d81d536e94491db4e52fcd0f96b37b436c9f74663582e836008e9bbe34c76",
+      "mci_conversion_911_asof.csv": "369be50fd2ef6e57431de258c19dfa51fbea06f6825a6088bdc4390e4a4b361a"
+    },
+    "model_factory_sha256": "7328a8d84f847b0e0d37e73df5a5ddef3a368c1dc192cfa10ec0a2c350e158bd",
+    "model_selection_metric": "validation_macro_f1",
+    "model_variants": [
+      "EarlyFusion",
+      "LateFusion",
+      "AttentionFusion",
+      "AUAF"
+    ],
+    "planned_jobs": 380,
+    "preprocessing_policy": "fit numeric imputation and scaling on training participants only",
+    "run_id": "stage4_5_neural_training_finalcohort_20261116",
+    "s6_scope": "MCI conversion only; exploratory reference, not a multimodal fusion claim",
+    "schema_version": 1,
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      1024
+    ],
+    "split_manifest_checks": [
+      {
+        "RID_match_pct": 100.0,
+        "participants_checked": 3700,
+        "split_match_pct": 100.0,
+        "status": "PASS",
+        "target_match_pct": 100.0,
+        "task": "diagnosis_multiclass"
+      },
+      {
+        "RID_match_pct": 100.0,
+        "participants_checked": 3700,
+        "split_match_pct": 100.0,
+        "status": "PASS",
+        "target_match_pct": 100.0,
+        "task": "diagnosis_binary"
+      },
+      {
+        "RID_match_pct": 100.0,
+        "participants_checked": 911,
+        "split_match_pct": 100.0,
+        "status": "PASS",
+        "target_match_pct": 100.0,
+        "task": "mci_conversion"
+      }
+    ],
+    "split_policy": "frozen subject-level Stage 4.4 train/validation/test assignments",
+    "stage": "4.5_part3_safe_neural_training_runner",
+    "tasks": [
+      "diagnosis_multiclass",
+      "diagnosis_binary",
+      "mci_conversion"
+    ],
+    "test_evaluation_policy": "evaluate test once after best validation checkpoint is selected",
+    "training_config": {
+      "batch_size": 64,
+      "device": null,
+      "gradient_clip_norm": 5.0,
+      "learning_rate": 0.0008,
+      "max_epochs": 20,
+      "min_delta": 1e-05,
+      "num_threads": 2,
+      "num_workers": 0,
+      "patience": 6,
+      "scheduler_factor": 0.5,
+      "scheduler_patience": 3,
+      "weight_decay": 0.0001
+    },
+    "training_engine_sha256": "97dc2525ef80130c601f75966c19edd49e48e60ea60f5b3c320f6c84b611c733",
+    "training_plan_sha256": "e2c0a6972a6001274d5d69726cdc0ff65d0fbc9884a659202a13798511aa8299",
+    "unverified_fields_excluded": [
+      "PTENGSPKAGE",
+      "PTIMMAGE"
+    ]
+  },
+  "immutable_manifest_sha256": "035047e501ee2258598d841d334e7460f4858ac28e144f70565d85a30b1cb5b4"
+}

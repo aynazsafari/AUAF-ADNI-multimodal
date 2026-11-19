@@ -1,0 +1,2 @@
+status,expected_file,required_n,eligible_n,excluded_insufficient_followup_n
+NOT_RUN_INPUT_MISSING,/mnt/data/AUAF_Stage4_8_AUTHORIZED_RUN/stage4_data/mci_first_index_all_1753.csv,1753,911,842

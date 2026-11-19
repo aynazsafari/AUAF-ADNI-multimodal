@@ -1,0 +1,16 @@
+task,seed,n,spearman_entropy_vs_set_size,p_value_descriptive
+diagnosis_binary,42,740,,
+diagnosis_binary,123,740,,
+diagnosis_binary,456,740,0.1676603280196196,4.525948801740211e-06
+diagnosis_binary,789,740,,
+diagnosis_binary,1024,740,,
+diagnosis_multiclass,42,740,0.3248718569759121,1.1936734553611985e-19
+diagnosis_multiclass,123,740,0.5721552771251215,1.4470050649683225e-65
+diagnosis_multiclass,456,740,0.3241611520024131,1.4468894936302007e-19
+diagnosis_multiclass,789,740,0.4669679910461554,2.385487307766301e-41
+diagnosis_multiclass,1024,740,0.6757703086690777,7.535192121576537e-100
+mci_conversion,42,183,,
+mci_conversion,123,183,,
+mci_conversion,456,183,,
+mci_conversion,789,183,,
+mci_conversion,1024,183,,

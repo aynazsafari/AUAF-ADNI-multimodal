@@ -1,0 +1,67 @@
+{
+  "stage": "4.4",
+  "created_utc": "2026-11-15T22:00:43.075581+00:00",
+  "source_dataset_rows": 36567,
+  "source_dataset_columns": 406,
+  "diagnostic_cohort_n": 3700,
+  "diagnostic_index_date_missing_n": 15,
+  "diagnostic_classes": {
+    "CN": 1593,
+    "MCI": 1550,
+    "AD": 557
+  },
+  "conversion_cohort_n": 911,
+  "conversion_classes": {
+    "0": 621,
+    "1": 290
+  },
+  "clinical_features": [
+    "PTGENDER",
+    "PTEDUCAT",
+    "PTENGSPKAGE",
+    "PTIMMAGE",
+    "MMSEASON",
+    "TRAILS",
+    "CLOCKCON",
+    "CLOCKNO",
+    "CLOCKHAN",
+    "FFLUENCY",
+    "MOCA",
+    "FAQFINAN",
+    "FAQFORM",
+    "FAQSHOP",
+    "FAQGAME",
+    "FAQBEVG",
+    "FAQMEAL",
+    "FAQEVENT",
+    "FAQTV",
+    "FAQREM",
+    "FAQTRAVL",
+    "FAQTOTAL",
+    "CDMEMORY",
+    "CDRSB",
+    "CLOCKCIRC",
+    "CLOCKSYM",
+    "CLOCKNUM",
+    "CLOCKHAND",
+    "CLOCKTIME",
+    "CLOCKSCOR",
+    "DIGITSCOR"
+  ],
+  "biomarker_features": [
+    "ABETA40",
+    "ABETA42",
+    "PTAU"
+  ],
+  "post_index_biomarkers_removed": {
+    "diagnosis": 209,
+    "mci_to_ad": 103
+  },
+  "asof_biomarkers_retained": {
+    "diagnosis": 316,
+    "mci_to_ad": 169
+  },
+  "model_retraining_performed": false,
+  "imputation_or_scaling_performed": false,
+  "original_notebooks_modified": false
+}

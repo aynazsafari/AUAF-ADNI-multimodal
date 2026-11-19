@@ -1,0 +1,16 @@
+task,seed,same_RID_order,same_y_true,same_y_pred,max_abs_probability_difference,exact_prediction_equivalence
+diagnosis_multiclass,42,True,True,True,0,True
+diagnosis_multiclass,123,True,True,True,0,True
+diagnosis_multiclass,456,True,True,True,0,True
+diagnosis_multiclass,789,True,True,True,0,True
+diagnosis_multiclass,1024,True,True,True,0,True
+diagnosis_binary,42,True,True,True,0,True
+diagnosis_binary,123,True,True,True,0,True
+diagnosis_binary,456,True,True,True,0,True
+diagnosis_binary,789,True,True,True,0,True
+diagnosis_binary,1024,True,True,True,0,True
+mci_conversion,42,True,True,True,0,True
+mci_conversion,123,True,True,True,0,True
+mci_conversion,456,True,True,True,0,True
+mci_conversion,789,True,True,True,0,True
+mci_conversion,1024,True,True,True,0,True

@@ -1,0 +1,7 @@
+task,modality,fit_n,effective_features,fit_RID_exactly_train
+diagnosis_multiclass,clinical_cognitive,2368,29,True
+diagnosis_multiclass,fluid_biomarker,2368,3,True
+diagnosis_binary,clinical_cognitive,2368,29,True
+diagnosis_binary,fluid_biomarker,2368,3,True
+mci_conversion,clinical_cognitive,582,29,True
+mci_conversion,fluid_biomarker,582,3,True

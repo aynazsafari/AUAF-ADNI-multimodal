@@ -1,0 +1,5 @@
+{
+  "diagnosis_multiclass": "XGBoost",
+  "diagnosis_binary": "CatBoost",
+  "mci_conversion": "CatBoost"
+}

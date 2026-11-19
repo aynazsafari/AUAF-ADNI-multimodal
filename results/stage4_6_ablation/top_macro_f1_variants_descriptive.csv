@@ -1,0 +1,5 @@
+task,top_variant,macro_f1_mean,macro_f1_sd,n_seeds
+diagnosis_binary,No Structural Gate,0.8051425870332782,0.0060747167798081,5
+diagnosis_multiclass,Full AUAF,0.848574659609899,0.0079691463408647,5
+diagnosis_multiclass,No Mask Tokens,0.848574659609899,0.0079691463408647,5
+mci_conversion,No Modality Dropout,0.730877386403468,0.0190769322748013,5

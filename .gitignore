@@ -1,0 +1,16 @@
+# --- ADNI / participant-level data: NEVER commit ---
+data/
+*_asof.csv
+*predictions*.csv
+*predictions*.csv.gz
+*split_manifest*.csv
+*index_manifest*.csv
+*.pt
+*.joblib
+*.pkl
+# --- python / env ---
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.DS_Store

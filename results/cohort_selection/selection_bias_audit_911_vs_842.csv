@@ -1,0 +1,12 @@
+Characteristic,Included (n=911),"Excluded, insufficient follow-up (n=842)",SMD,p
+ADNI phase at index: ADNI1,309 (33.9%),108 (12.8%),,7.04e-81
+ADNI phase at index: ADNI2,305 (33.5%),225 (26.7%),,7.04e-81
+ADNI phase at index: ADNI3,177 (19.4%),207 (24.6%),,7.04e-81
+ADNI phase at index: ADNI4,14 (1.5%),270 (32.1%),,7.04e-81
+ADNI phase at index: ADNIGO,106 (11.6%),32 (3.8%),,7.04e-81
+Index year,2011.0 [2007.0–2012.0] (n=911),2018.0 [2011.0–2024.0] (n=842),-0.97,3.08e-72
+Diagnostic follow-up (years),5.0 [3.2–7.3] (n=911),0.1 [0.0–1.2] (n=842),2.00,7.51e-265
+CSF biomarker available as of index: False,742 (81.4%),786 (93.3%),,1.7e-13
+CSF biomarker available as of index: True,169 (18.6%),56 (6.7%),,1.7e-13
+ABETA42 (pg/mL),723.1 [567.5–1195.0] (n=169),846.0 [624.5–1170.2] (n=56),0.09,0.656
+PTAU (pg/mL),25.7 [19.6–37.6] (n=169),23.0 [17.1–37.7] (n=55),0.12,0.246

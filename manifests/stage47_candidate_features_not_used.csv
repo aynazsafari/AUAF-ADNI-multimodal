@@ -1,0 +1,4 @@
+feature,reason
+PTENGSPKAGE,Explicitly excluded by Stage 4.5 inference/training preparation as unverified/highly sparse.
+PTIMMAGE,Explicitly excluded by Stage 4.5 inference/training preparation as unverified/highly sparse.
+LANGUAGE_CODE,Administrative metadata/zero variance; not in final predictor manifest.

@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article."
+title: "AUAF: Adaptive Uncertainty-Aware Multimodal Fusion for Alzheimer's Disease Diagnosis and Early MCI-to-AD Conversion"
+authors:
+  - family-names: Safari Shateri
+    given-names: Aynaz
+  - family-names: Salmanpour Fard
+    given-names: Parya
+  - family-names: Samadi Gharehveran
+    given-names: Sina
+  - family-names: Shirini
+    given-names: Kimia
+    email: k.shirini@tabrizu.ac.ir
+license: MIT

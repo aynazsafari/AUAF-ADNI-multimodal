@@ -1,0 +1,64 @@
+task,feature_set,split,split_n,eligible_n,no_usable_predictor_n,eligible_class_counts,effective_clinical_features,effective_biomarker_features
+diagnosis_multiclass,S0_verified_asof,train,2368,2368,0,"{""0"": 1019, ""1"": 992, ""2"": 357}",29,3
+diagnosis_multiclass,S0_verified_asof,validation,592,592,0,"{""0"": 255, ""1"": 248, ""2"": 89}",29,3
+diagnosis_multiclass,S0_verified_asof,test,740,740,0,"{""0"": 319, ""1"": 310, ""2"": 111}",29,3
+diagnosis_multiclass,S1_minus_CDR,train,2368,2368,0,"{""0"": 1019, ""1"": 992, ""2"": 357}",27,3
+diagnosis_multiclass,S1_minus_CDR,validation,592,592,0,"{""0"": 255, ""1"": 248, ""2"": 89}",27,3
+diagnosis_multiclass,S1_minus_CDR,test,740,740,0,"{""0"": 319, ""1"": 310, ""2"": 111}",27,3
+diagnosis_multiclass,S2_minus_FAQ,train,2368,2368,0,"{""0"": 1019, ""1"": 992, ""2"": 357}",18,3
+diagnosis_multiclass,S2_minus_FAQ,validation,592,592,0,"{""0"": 255, ""1"": 248, ""2"": 89}",18,3
+diagnosis_multiclass,S2_minus_FAQ,test,740,739,1,"{""0"": 319, ""1"": 309, ""2"": 111}",18,3
+diagnosis_multiclass,S3_minus_CDR_FAQ,train,2368,2368,0,"{""0"": 1019, ""1"": 992, ""2"": 357}",16,3
+diagnosis_multiclass,S3_minus_CDR_FAQ,validation,592,592,0,"{""0"": 255, ""1"": 248, ""2"": 89}",16,3
+diagnosis_multiclass,S3_minus_CDR_FAQ,test,740,739,1,"{""0"": 319, ""1"": 309, ""2"": 111}",16,3
+diagnosis_multiclass,S4_minus_MMSE_MOCA,train,2368,2368,0,"{""0"": 1019, ""1"": 992, ""2"": 357}",22,3
+diagnosis_multiclass,S4_minus_MMSE_MOCA,validation,592,592,0,"{""0"": 255, ""1"": 248, ""2"": 89}",22,3
+diagnosis_multiclass,S4_minus_MMSE_MOCA,test,740,740,0,"{""0"": 319, ""1"": 310, ""2"": 111}",22,3
+diagnosis_multiclass,S5_strict_CDR_FAQ_MMSE_MOCA,train,2368,2368,0,"{""0"": 1019, ""1"": 992, ""2"": 357}",9,3
+diagnosis_multiclass,S5_strict_CDR_FAQ_MMSE_MOCA,validation,592,592,0,"{""0"": 255, ""1"": 248, ""2"": 89}",9,3
+diagnosis_multiclass,S5_strict_CDR_FAQ_MMSE_MOCA,test,740,737,3,"{""0"": 318, ""1"": 309, ""2"": 110}",9,3
+diagnosis_multiclass,S6_demographic_biomarker_only,train,2368,1946,422,"{""0"": 905, ""1"": 781, ""2"": 260}",2,3
+diagnosis_multiclass,S6_demographic_biomarker_only,validation,592,482,110,"{""0"": 221, ""1"": 193, ""2"": 68}",2,3
+diagnosis_multiclass,S6_demographic_biomarker_only,test,740,620,120,"{""0"": 293, ""1"": 241, ""2"": 86}",2,3
+diagnosis_binary,S0_verified_asof,train,2368,2368,0,"{""0"": 2011, ""1"": 357}",29,3
+diagnosis_binary,S0_verified_asof,validation,592,592,0,"{""0"": 503, ""1"": 89}",29,3
+diagnosis_binary,S0_verified_asof,test,740,740,0,"{""0"": 629, ""1"": 111}",29,3
+diagnosis_binary,S1_minus_CDR,train,2368,2368,0,"{""0"": 2011, ""1"": 357}",27,3
+diagnosis_binary,S1_minus_CDR,validation,592,592,0,"{""0"": 503, ""1"": 89}",27,3
+diagnosis_binary,S1_minus_CDR,test,740,740,0,"{""0"": 629, ""1"": 111}",27,3
+diagnosis_binary,S2_minus_FAQ,train,2368,2367,1,"{""0"": 2010, ""1"": 357}",18,3
+diagnosis_binary,S2_minus_FAQ,validation,592,592,0,"{""0"": 503, ""1"": 89}",18,3
+diagnosis_binary,S2_minus_FAQ,test,740,740,0,"{""0"": 629, ""1"": 111}",18,3
+diagnosis_binary,S3_minus_CDR_FAQ,train,2368,2367,1,"{""0"": 2010, ""1"": 357}",16,3
+diagnosis_binary,S3_minus_CDR_FAQ,validation,592,592,0,"{""0"": 503, ""1"": 89}",16,3
+diagnosis_binary,S3_minus_CDR_FAQ,test,740,740,0,"{""0"": 629, ""1"": 111}",16,3
+diagnosis_binary,S4_minus_MMSE_MOCA,train,2368,2368,0,"{""0"": 2011, ""1"": 357}",22,3
+diagnosis_binary,S4_minus_MMSE_MOCA,validation,592,592,0,"{""0"": 503, ""1"": 89}",22,3
+diagnosis_binary,S4_minus_MMSE_MOCA,test,740,740,0,"{""0"": 629, ""1"": 111}",22,3
+diagnosis_binary,S5_strict_CDR_FAQ_MMSE_MOCA,train,2368,2366,2,"{""0"": 2009, ""1"": 357}",9,3
+diagnosis_binary,S5_strict_CDR_FAQ_MMSE_MOCA,validation,592,592,0,"{""0"": 503, ""1"": 89}",9,3
+diagnosis_binary,S5_strict_CDR_FAQ_MMSE_MOCA,test,740,739,1,"{""0"": 629, ""1"": 110}",9,3
+diagnosis_binary,S6_demographic_biomarker_only,train,2368,1955,413,"{""0"": 1693, ""1"": 262}",2,3
+diagnosis_binary,S6_demographic_biomarker_only,validation,592,487,105,"{""0"": 421, ""1"": 66}",2,3
+diagnosis_binary,S6_demographic_biomarker_only,test,740,606,134,"{""0"": 520, ""1"": 86}",2,3
+mci_conversion,S0_verified_asof,train,582,582,0,"{""0"": 397, ""1"": 185}",29,3
+mci_conversion,S0_verified_asof,validation,146,146,0,"{""0"": 99, ""1"": 47}",29,3
+mci_conversion,S0_verified_asof,test,183,183,0,"{""0"": 125, ""1"": 58}",29,3
+mci_conversion,S1_minus_CDR,train,582,582,0,"{""0"": 397, ""1"": 185}",27,3
+mci_conversion,S1_minus_CDR,validation,146,146,0,"{""0"": 99, ""1"": 47}",27,3
+mci_conversion,S1_minus_CDR,test,183,183,0,"{""0"": 125, ""1"": 58}",27,3
+mci_conversion,S2_minus_FAQ,train,582,582,0,"{""0"": 397, ""1"": 185}",18,3
+mci_conversion,S2_minus_FAQ,validation,146,146,0,"{""0"": 99, ""1"": 47}",18,3
+mci_conversion,S2_minus_FAQ,test,183,183,0,"{""0"": 125, ""1"": 58}",18,3
+mci_conversion,S3_minus_CDR_FAQ,train,582,582,0,"{""0"": 397, ""1"": 185}",16,3
+mci_conversion,S3_minus_CDR_FAQ,validation,146,146,0,"{""0"": 99, ""1"": 47}",16,3
+mci_conversion,S3_minus_CDR_FAQ,test,183,183,0,"{""0"": 125, ""1"": 58}",16,3
+mci_conversion,S4_minus_MMSE_MOCA,train,582,582,0,"{""0"": 397, ""1"": 185}",22,3
+mci_conversion,S4_minus_MMSE_MOCA,validation,146,146,0,"{""0"": 99, ""1"": 47}",22,3
+mci_conversion,S4_minus_MMSE_MOCA,test,183,183,0,"{""0"": 125, ""1"": 58}",22,3
+mci_conversion,S5_strict_CDR_FAQ_MMSE_MOCA,train,582,582,0,"{""0"": 397, ""1"": 185}",9,3
+mci_conversion,S5_strict_CDR_FAQ_MMSE_MOCA,validation,146,146,0,"{""0"": 99, ""1"": 47}",9,3
+mci_conversion,S5_strict_CDR_FAQ_MMSE_MOCA,test,183,183,0,"{""0"": 125, ""1"": 58}",9,3
+mci_conversion,S6_demographic_biomarker_only,train,582,372,210,"{""0"": 271, ""1"": 101}",2,3
+mci_conversion,S6_demographic_biomarker_only,validation,146,109,37,"{""0"": 78, ""1"": 31}",2,3
+mci_conversion,S6_demographic_biomarker_only,test,183,118,65,"{""0"": 81, ""1"": 37}",2,3

@@ -1,0 +1,44 @@
+[
+  {
+    "task": "diagnosis_multiclass",
+    "n": 3700,
+    "unique_RID": 3700,
+    "index_date_missing": 15,
+    "predictors_34": 34,
+    "any_feature_available_n": 3700,
+    "post_index_biomarker_values": 0,
+    "split_counts": "{\"train\": 2368, \"test\": 740, \"validation\": 592}",
+    "expected_n_pass": true,
+    "rid_unique_pass": true,
+    "missing_date_policy_pass": true,
+    "postindex_gate_pass": true
+  },
+  {
+    "task": "diagnosis_binary",
+    "n": 3700,
+    "unique_RID": 3700,
+    "index_date_missing": 15,
+    "predictors_34": 34,
+    "any_feature_available_n": 3700,
+    "post_index_biomarker_values": 0,
+    "split_counts": "{\"train\": 2368, \"test\": 740, \"validation\": 592}",
+    "expected_n_pass": true,
+    "rid_unique_pass": true,
+    "missing_date_policy_pass": true,
+    "postindex_gate_pass": true
+  },
+  {
+    "task": "mci_conversion",
+    "n": 911,
+    "unique_RID": 911,
+    "index_date_missing": 0,
+    "predictors_34": 34,
+    "any_feature_available_n": 911,
+    "post_index_biomarker_values": 0,
+    "split_counts": "{\"train\": 582, \"test\": 183, \"validation\": 146}",
+    "expected_n_pass": true,
+    "rid_unique_pass": true,
+    "missing_date_policy_pass": true,
+    "postindex_gate_pass": true
+  }
+]

@@ -1,0 +1,25 @@
+cohort,metric,n_comparisons,n_differences_gt_1e-8,max_abs_difference,mean_abs_difference,status,note
+full_test,accuracy,525,0,0.0,0.0,PASS,
+full_test,balanced_accuracy,525,0,0.0,0.0,PASS,
+full_test,precision_macro,525,0,0.0,0.0,PASS,
+full_test,recall_macro,525,0,0.0,0.0,PASS,
+full_test,f1_macro,525,0,0.0,0.0,PASS,
+full_test,sensitivity_macro,525,0,0.0,0.0,PASS,
+full_test,specificity_macro,525,0,0.0,0.0,PASS,
+full_test,roc_auc,525,3,2.387124803604479e-06,1.364071316430005e-08,PASS_WITH_SMALL_RANKING_METRIC_DISCREPANCY,AUC/PR-AUC can shift under tiny tree-probability/ranking differences; one matched ExtraTrees condition has a 3.06e-4 ROC-AUC and 1.01e-4 PR-AUC difference.
+full_test,pr_auc,525,2,1.8851562796351473e-06,7.147632656327795e-09,PASS_WITH_SMALL_RANKING_METRIC_DISCREPANCY,AUC/PR-AUC can shift under tiny tree-probability/ranking differences; one matched ExtraTrees condition has a 3.06e-4 ROC-AUC and 1.01e-4 PR-AUC difference.
+full_test,brier,525,0,2.220446049250313e-16,2.3314683517128286e-17,PASS,
+full_test,log_loss,525,0,8.881784197001252e-16,1.4559781951512767e-16,PASS,
+full_test,ece,525,0,4.0245584642661925e-16,6.260864842439722e-17,PASS,
+matched_complete_case,accuracy,525,0,0.0,0.0,PASS,
+matched_complete_case,balanced_accuracy,525,0,0.0,0.0,PASS,
+matched_complete_case,precision_macro,525,0,0.0,0.0,PASS,
+matched_complete_case,recall_macro,525,0,0.0,0.0,PASS,
+matched_complete_case,f1_macro,525,0,0.0,0.0,PASS,
+matched_complete_case,sensitivity_macro,525,0,0.0,0.0,PASS,
+matched_complete_case,specificity_macro,525,0,0.0,0.0,PASS,
+matched_complete_case,roc_auc,525,1,0.00030637254901955124,5.835667600374519e-07,PASS_WITH_SMALL_RANKING_METRIC_DISCREPANCY,AUC/PR-AUC can shift under tiny tree-probability/ranking differences; one matched ExtraTrees condition has a 3.06e-4 ROC-AUC and 1.01e-4 PR-AUC difference.
+matched_complete_case,pr_auc,525,1,0.0001008267795926665,1.9205100874857061e-07,PASS_WITH_SMALL_RANKING_METRIC_DISCREPANCY,AUC/PR-AUC can shift under tiny tree-probability/ranking differences; one matched ExtraTrees condition has a 3.06e-4 ROC-AUC and 1.01e-4 PR-AUC difference.
+matched_complete_case,brier,525,0,2.220446049250313e-16,3.9650822308041306e-17,PASS,
+matched_complete_case,log_loss,525,0,4.107825191113079e-15,2.9849139033493495e-16,PASS,
+matched_complete_case,ece,525,0,3.0531133177191805e-16,5.744743305396718e-17,PASS,

@@ -1,0 +1,25 @@
+task,model,mode,output_shape,finite_logits,both_modalities_pass,clinical_only_pass,biomarker_only_pass,training_performed,all_zero_mask_rejected,mc_dropout_without_modality_dropout_pass
+diagnosis_multiclass,EarlyFusion,eval,"(4, 3)",True,True,True,True,False,True,
+diagnosis_multiclass,EarlyFusion,train,"(4, 3)",True,True,True,True,False,True,
+diagnosis_multiclass,LateFusion,eval,"(4, 3)",True,True,True,True,False,True,
+diagnosis_multiclass,LateFusion,train,"(4, 3)",True,True,True,True,False,True,
+diagnosis_multiclass,AttentionFusion,eval,"(4, 3)",True,True,True,True,False,True,
+diagnosis_multiclass,AttentionFusion,train,"(4, 3)",True,True,True,True,False,True,
+diagnosis_multiclass,AUAF,eval,"(4, 3)",True,True,True,True,False,True,True
+diagnosis_multiclass,AUAF,train,"(4, 3)",True,True,True,True,False,True,
+diagnosis_binary,EarlyFusion,eval,"(4, 2)",True,True,True,True,False,True,
+diagnosis_binary,EarlyFusion,train,"(4, 2)",True,True,True,True,False,True,
+diagnosis_binary,LateFusion,eval,"(4, 2)",True,True,True,True,False,True,
+diagnosis_binary,LateFusion,train,"(4, 2)",True,True,True,True,False,True,
+diagnosis_binary,AttentionFusion,eval,"(4, 2)",True,True,True,True,False,True,
+diagnosis_binary,AttentionFusion,train,"(4, 2)",True,True,True,True,False,True,
+diagnosis_binary,AUAF,eval,"(4, 2)",True,True,True,True,False,True,True
+diagnosis_binary,AUAF,train,"(4, 2)",True,True,True,True,False,True,
+mci_conversion,EarlyFusion,eval,"(4, 2)",True,True,True,True,False,True,
+mci_conversion,EarlyFusion,train,"(4, 2)",True,True,True,True,False,True,
+mci_conversion,LateFusion,eval,"(4, 2)",True,True,True,True,False,True,
+mci_conversion,LateFusion,train,"(4, 2)",True,True,True,True,False,True,
+mci_conversion,AttentionFusion,eval,"(4, 2)",True,True,True,True,False,True,
+mci_conversion,AttentionFusion,train,"(4, 2)",True,True,True,True,False,True,
+mci_conversion,AUAF,eval,"(4, 2)",True,True,True,True,False,True,True
+mci_conversion,AUAF,train,"(4, 2)",True,True,True,True,False,True,

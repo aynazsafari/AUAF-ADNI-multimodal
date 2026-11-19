@@ -1,0 +1,137 @@
+[
+  {
+    "cell": 2,
+    "execution_count": 1,
+    "outputs": [
+      {
+        "stream": "Project: /mnt/data/AUAF_Stage4_5_RealData_FinalCohort\nData: /mnt/data/AUAF_Stage4_5_RealData_FinalCohort/stage4_data\nOutput: /mnt/data/AUAF_Stage4_5_RealData_FinalCohort/outputs/stage4_5_part2_preprocessing_model_factory_v3\nPyTorch: 2.10.0+cpu\n"
+      }
+    ]
+  },
+  {
+    "cell": 4,
+    "execution_count": 2,
+    "outputs": [
+      {
+        "stream": "Input SHA-256 verification: PASS\n"
+      }
+    ]
+  },
+  {
+    "cell": 6,
+    "execution_count": 3,
+    "outputs": [
+      {
+        "stream": "Verified five seeds: [42, 123, 456, 789, 1024]\nSeed interpretation: model initialization/tuning seeds; not independent outer splits.\n"
+      }
+    ]
+  },
+  {
+    "cell": 8,
+    "execution_count": 4,
+    "outputs": [
+      {
+        "stream": "                task    n                     class_counts                                    split_counts  unique_RID  all_predictors_numeric  no_ADNI_sentinels\ndiagnosis_multiclass 3700 {'0': 1593, '1': 1550, '2': 557} {'train': 2368, 'test': 740, 'validation': 592}        3700                    True               True\n    diagnosis_binary 3700            {'0': 3143, '1': 557} {'train': 2368, 'test': 740, 'validation': 592}        3700                    True               True\n      mci_conversion  911             {'0': 621, '1': 290}  {'train': 582, 'test': 183, 'validation': 146}         911                    True               True\n"
+      }
+    ]
+  },
+  {
+    "cell": 10,
+    "execution_count": 5,
+    "outputs": [
+      {
+        "stream": "                task  participants_checked  RID_match_pct  split_match_pct  target_match_pct status\ndiagnosis_multiclass                  3700          100.0            100.0             100.0   PASS\n    diagnosis_binary                  3700          100.0            100.0             100.0   PASS\n      mci_conversion                   911          100.0            100.0             100.0   PASS\n"
+      }
+    ]
+  },
+  {
+    "cell": 12,
+    "execution_count": 6,
+    "outputs": [
+      {
+        "stream": "                  feature_set  candidate_predictor_count                                                           analysis_role\n             S0_verified_asof                         32                                  Primary verified as-of-index candidate\n                 S1_minus_CDR                         30                       Prespecified circularity/severity sensitivity set\n                 S2_minus_FAQ                         21                       Prespecified circularity/severity sensitivity set\n             S3_minus_CDR_FAQ                         19                       Prespecified circularity/severity sensitivity set\n           S4_minus_MMSE_MOCA                         25                       Prespecified circularity/severity sensitivity set\n  S5_strict_CDR_FAQ_MMSE_MOCA                         12                       Prespecified circularity/severity sensitivity set\nS6_demographic_biomarker_only                          5 Exploratory reference for conversion; not evidence of multimodal fusion\n\nUnverified ADNI fields excluded from all training feature sets:\n    feature                        definition_status                       circularity_risk                                                                             risk_reason_and_action\nPTENGSPKAGE Provisional; exact DATADIC entry needed.  Low direct circularity; high sparsity Verify field definition; consider dropping because >96% missing in the diagnostic baseline cohort.\n   PTIMMAGE      Unverified; DATADIC entry required. Unclassified until definition verified     Do not use in a final model until its definition and coding are confirmed; also highly sparse.\n"
+      }
+    ]
+  },
+  {
+    "cell": 14,
+    "execution_count": 7,
+    "outputs": [
+      {
+        "stream": "Prepared task/feature-set combinations: 21\nTrain-only preprocessing fit audit: PASS 42 modality pipelines\n"
+      }
+    ]
+  },
+  {
+    "cell": 16,
+    "execution_count": 8,
+    "outputs": [
+      {
+        "stream": "  0              431                51        110\ndiagnosis_multiclass S6_demographic_biomarker_only       test                   539                     81                            0              539                81        120\n    diagnosis_binary              S0_verified_asof      train                  2368                    199                          199             2169                 0          0\n    diagnosis_binary              S0_verified_asof validation                   592                     50                           50              542                 0          0\n    diagnosis_binary              S0_verified_asof       test                   740                     67                           67              673                 0          0\n    diagnosis_binary S6_demographic_biomarker_only      train                  1756                    199                            0             1756               199        413\n    diagnosis_binary S6_demographic_biomarker_only validation                   437                     50                            0              437                50        105\n    diagnosis_binary S6_demographic_biomarker_only       test                   539                     67                            0              539                67        134\n      mci_conversion              S0_verified_asof      train                   582                    107                          107              475                 0          0\n      mci_conversion              S0_verified_asof validation                   146                     33                           33              113                 0          0\n      mci_conversion              S0_verified_asof       test                   183                     29                           29              154                 0          0\n      mci_conversion S6_demographic_biomarker_only      train                   266                    107                            1              265               106        210\n      mci_conversion S6_demographic_biomarker_only validation                    77                     33                            1               76                32         37\n      mci_conversion S6_demographic_biomarker_only       test                    89                     29                            0               89                29         65\n\nPairwise matched test cohorts:\n                task                                        comparison  matched_test_RID_n  reduced_set_eligible_test_n  same_test_participants_for_pair                                                                           note\ndiagnosis_multiclass              S0_verified_asof vs S0_verified_asof                 740                          740                             True Pairwise matched test population; do not compare against unmatched S0 metrics.\ndiagnosis_multiclass                  S0_verified_asof vs S1_minus_CDR                 740                          740                             True Pairwise matched test population; do not compare against unmatched S0 metrics.\ndiagnosis_multiclass                  S0_verified_asof vs S2_minus_FAQ                 739                          739                             True Pairwise matched test population; do not compare against unmatched S0 metrics.\ndiagnosis_multiclass              S0_verified_asof vs S3_minus_CDR_FAQ                 739                          739                             True Pairwise matched test population; do not compare against unmatched S0 metrics.\ndiagnosis_multiclass            S0_verified_asof vs S4_minus_MMSE_MOCA                 740                          740                             True Pairwise matched test population; do not compare against unmatched S0 metrics.\ndiagnosis_multiclass   S0_verified_asof vs S5_strict_CDR_FAQ_MMSE_MOCA                 737                          737                             True Pairwise matched test population; do not compare against unmatched S0 metrics.\ndiagnosis_multiclass S0_verified_asof vs S6_demographic_biomarker_only                 620                          620                             True Pairwise matched test population; do not compare against unmatched S0 metrics.\n    diagnosis_binary              S0_verified_asof vs S0_verified_asof                 740                          740                             True Pairwise matched test population; do not compare against unmatched S0 metrics.\n    diagnosis_binary                  S0_verified_asof vs S1_minus_CDR                 740                          740                             True Pairwise matched test population; do not compare against unmatched S0 metrics.\n    diagnosis_binary                  S0_verified_asof vs S2_minus_FAQ                 740                          740                             True Pairwise matched test population; do not compare against unmatched S0 metrics.\n"
+      }
+    ]
+  },
+  {
+    "cell": 18,
+    "execution_count": 9,
+    "outputs": [
+      {
+        "stream": "Canonical model factory SHA-256: 7328a8d84f847b0e0d37e73df5a5ddef3a368c1dc192cfa10ec0a2c350e158bd\n"
+      }
+    ]
+  },
+  {
+    "cell": 20,
+    "execution_count": 10,
+    "outputs": [
+      {
+        "stream": "                       finite_logits\nmodel           mode                \nAUAF            eval            True\n                train           True\nAttentionFusion eval            True\n                train           True\nEarlyFusion     eval            True\n                train           True\nLateFusion      eval            True\n                train           True\nSmoke tests passed: 24 of 24 mode/task/model checks\n"
+      }
+    ]
+  },
+  {
+    "cell": 22,
+    "execution_count": 11,
+    "outputs": [
+      {
+        "stream": "Output status: {'split_manifest_checks.csv': 'CREATED', 'preprocessor_fit_audit.csv': 'CREATED', 'feature_set_registry.csv': 'CREATED', 'feature_set_eligibility.csv': 'CREATED', 'matched_test_cohort_summary.csv': 'CREATED', 'modality_overlap_summary.csv': 'CREATED', 'model_factory_smoke_test.csv': 'CREATED', 'preprocessing_model_factory_manifest.json': 'CREATED'}\nPART 2 PREPROCESSING AND MODEL-FACTORY CHECKS: PASS\nNo model training or tuning was performed.\n"
+      }
+    ]
+  },
+  {
+    "cell": 25,
+    "execution_count": 12,
+    "outputs": [
+      {
+        "stream": "Training run ID: stage4_5_neural_training_finalcohort_20261116\nImmutable run manifest SHA-256: 035047e501ee2258598d841d334e7460f4858ac28e144f70565d85a30b1cb5b4\nPlanned neural jobs: 380\nTask/feature-set combinations: 19\nPlan files: CREATED CREATED\n                task                   feature_set  model_variants  seeds  train_n  validation_n  test_n\n    diagnosis_binary              S0_verified_asof               4      5     2368           592     740\n    diagnosis_binary                  S1_minus_CDR               4      5     2368           592     740\n    diagnosis_binary                  S2_minus_FAQ               4      5     2367           592     740\n    diagnosis_binary              S3_minus_CDR_FAQ               4      5     2367           592     740\n    diagnosis_binary            S4_minus_MMSE_MOCA               4      5     2368           592     740\n    diagnosis_binary   S5_strict_CDR_FAQ_MMSE_MOCA               4      5     2366           592     739\ndiagnosis_multiclass              S0_verified_asof               4      5     2368           592     740\ndiagnosis_multiclass                  S1_minus_CDR               4      5     2368           592     740\ndiagnosis_multiclass                  S2_minus_FAQ               4      5     2368           592     739\ndiagnosis_multiclass              S3_minus_CDR_FAQ               4      5     2368           592     739\ndiagnosis_multiclass            S4_minus_MMSE_MOCA               4      5     2368           592     740\ndiagnosis_multiclass   S5_strict_CDR_FAQ_MMSE_MOCA               4      5     2368           592     737\n      mci_conversion              S0_verified_asof               4      5      582           146     183\n      mci_conversion                  S1_minus_CDR               4      5      582           146     183\n      mci_conversion                  S2_minus_FAQ               4      5      582           146     183\n      mci_conversion              S3_minus_CDR_FAQ               4      5      582           146     183\n      mci_conversion            S4_minus_MMSE_MOCA               4      5      582           146     183\n      mci_conversion   S5_strict_CDR_FAQ_MMSE_MOCA               4      5      582           146     183\n      mci_conversion S6_demographic_biomarker_only               4      5      372           109     118\n"
+      }
+    ]
+  },
+  {
+    "cell": 27,
+    "execution_count": 13,
+    "outputs": [
+      {
+        "stream": "{\n  \"status\": \"PASS\",\n  \"test_data\": \"synthetic only; no research participants or labels used\",\n  \"checks\": {\n    \"interrupted_after_epoch_1\": true,\n    \"resume_completed\": true,\n    \"resumed_equals_uninterrupted_best_state\": true,\n    \"best_state_sha256\": \"9198a0b4e89d67d0c528e43b1902fdd695db39e914ba42c83c30105f2d083422\",\n    \"completed_job_skipped_on_repeat\": true,\n    \"config_mismatch_rejected\": true,\n    \"existing_job_overwrite_rejected\": true,\n    \"run_manifest_mismatch_rejected\": true\n  },\n  \"resumed_status\": \"COMPLETED\",\n  \"uninterrupted_status\": \"COMPLETED\",\n  \"completed_repeat_status\": \"SKIPPED_COMPLETE\"\n}\n"
+      }
+    ]
+  },
+  {
+    "cell": 29,
+    "execution_count": 14,
+    "outputs": [
+      {
+        "stream": "{\n  \"status\": \"PASS\",\n  \"purpose\": \"software integration only; not a research benchmark\",\n  \"task\": \"diagnosis_multiclass\",\n  \"feature_set\": \"S0_verified_asof\",\n  \"sample_counts\": {\n    \"train\": 30,\n    \"validation\": 15,\n    \"test\": 15\n  },\n  \"models\": [\n    {\n      \"model\": \"EarlyFusion\",\n      \"status\": \"COMPLETED\",\n      \"best_epoch\": 1\n    },\n    {\n      \"model\": \"LateFusion\",\n      \"status\": \"COMPLETED\",\n      \"best_epoch\": 1\n    },\n    {\n      \"model\": \"AttentionFusion\",\n      \"status\": \"COMPLETED\",\n      \"best_epoch\": 1\n    },\n    {\n      \"model\": \"AUAF\",\n      \"status\": \"COMPLETED\",\n      \"best_epoch\": 1\n    }\n  ],\n  \"checkpoints_and_predictions_retained\": false,\n  \"performance_metrics_retained\": false\n}\n"
+      }
+    ]
+  },
+  {
+    "cell": 31,
+    "execution_count": 15,
+    "outputs": [
+      {
+        "stream": "FULL RESEARCH TRAINING NOT STARTED.\nPreflight only: 380 jobs planned; safe-resume and real-data software tests passed.\n"
+      }
+    ]
+  }
+]

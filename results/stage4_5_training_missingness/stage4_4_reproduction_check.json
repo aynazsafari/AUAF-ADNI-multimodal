@@ -1,0 +1,29 @@
+{
+  "stage": "4.4 exact reproduction verification",
+  "source_raw_file": "ADNI_Multimodal_Tabular_Final.csv",
+  "source_raw_sha256": "9cb0dc832bfc1f60ee0d96c3c947cec86d506e6c265329c9ca2d35fb71e630db",
+  "outputs": [
+    {
+      "file": "cn_mci_ad_asof.csv",
+      "reproduced_sha256": "31c33da7925751252541dd39e0d9ade749236f3b155e58205ff8c240fee24ac1",
+      "saved_final_sha256": "31c33da7925751252541dd39e0d9ade749236f3b155e58205ff8c240fee24ac1",
+      "byte_identical": true
+    },
+    {
+      "file": "ad_vs_nonad_asof.csv",
+      "reproduced_sha256": "7cc19f3a0859a1e80abe5cca413075ab437cdf42f6a0da357b8397e149bc49cf",
+      "saved_final_sha256": "7cc19f3a0859a1e80abe5cca413075ab437cdf42f6a0da357b8397e149bc49cf",
+      "byte_identical": true
+    },
+    {
+      "file": "early_decline_asof.csv",
+      "reproduced_sha256": "cb29193369f73e28847cb32cd05e72a8fb0efd5dbf782f0b9d1b9d5411fc743e",
+      "saved_final_sha256": "cb29193369f73e28847cb32cd05e72a8fb0efd5dbf782f0b9d1b9d5411fc743e",
+      "byte_identical": true
+    }
+  ],
+  "all_outputs_byte_identical": true,
+  "diagnostic_index_date_missing_n": 15,
+  "mci_conversion_index_date_missing_n": 0,
+  "post_index_biomarker_values_after_gate": 0
+}
