@@ -135,6 +135,3 @@ Under the ADNI Data Use Agreement, this repository contains **no participant-lev
 
 Data collection and sharing for this project was funded by the Alzheimer's Disease Neuroimaging Initiative (ADNI). Data used in preparation of this article were obtained from the ADNI database (adni.loni.usc.edu). The ADNI investigators contributed to the design and implementation of ADNI and/or provided data but did not participate in the analysis or writing of this work.
 
-## ✉️ Contact
-
-Corresponding author: **Kimia Shirini** — k.shirini@tabrizu.ac.ir
